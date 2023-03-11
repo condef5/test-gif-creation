@@ -10,6 +10,9 @@ module.exports = {
           secondary: '#ff5722',
         },
       },
+      fontFamily: {
+        'priory-san': ['PrioriSan', 'system-ui', '-apple-system'],
+      },
     },
   },
   plugins: [],

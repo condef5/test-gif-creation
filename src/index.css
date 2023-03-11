@@ -47,3 +47,15 @@ body {
     var(--color) 104.45%
   );
 }
+
+@font-face {
+  font-family: 'PrioriSan';
+  src: url('/fonts/PrioriSansOT-Bold.otf') format('opentype'),
+    url('/fonts/PrioriSansOT-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.text-white-shadow {
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75);
+}

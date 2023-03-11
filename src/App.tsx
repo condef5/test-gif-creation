@@ -87,7 +87,7 @@ function App() {
         }}
       >
         <div
-          className="absolute top-0 left-0 w-full h-full bg-no-repeat"
+          className="absolute top-0 left-0 w-full h-full bg-no-repeat pointer-events-none"
           style={{
             backgroundImage: `url(${bgPattern})`,
           }}
@@ -98,7 +98,7 @@ function App() {
         <img
           src={gif}
           alt="rhyshock"
-          className="m-auto w-[52%]"
+          className="mx-auto w-[60%]"
           style={
             {
               filter: 'drop-shadow(4px 4px 6px var(--beast-color))',
@@ -107,8 +107,8 @@ function App() {
           }
         />
 
-        <div className="align-baseline py-4">
-          <h1 className="text-white uppercase font-semibold text-lg tracking-wider">
+        <div className="self-end justify-self-end py-4">
+          <h1 className="text-white font-priory-san uppercase font-semibold text-white-shadow text-[28px]">
             Rhyshock
           </h1>
           <div className="px-8 flex gap-4 items-start -mt-4">
@@ -128,7 +128,7 @@ function App() {
                   >
                     <img src={value} className="w-8" />
                   </Rhombus>
-                  <div className="text-white mt-1">
+                  <div className="text-white mt-1 font-priory-san text-white-shadow text-[22px]">
                     {/* @ts-ignore */}
                     {geneticValues[key]}
                   </div>
