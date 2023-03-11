@@ -1,0 +1,875 @@
+[
+  {
+    "id": 3,
+    "name": "Magma Shot",
+    "power": 90,
+    "element": "Fire",
+    "category": "Mystic",
+    "description": "A powerful fire move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 4,
+    "name": "Burning Lash",
+    "power": 90,
+    "element": "Fire",
+    "category": "Natural",
+    "description": "A powerful fire move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 5,
+    "name": "Inferno",
+    "power": 100,
+    "element": "Fire",
+    "category": "Mystic",
+    "description": "The target is hit with an intense blast of fire. This move can burn the target if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 6,
+    "name": "Firebrand",
+    "power": 100,
+    "element": "Fire",
+    "category": "Natural",
+    "description": "The target is hit with pieces of burning wood. This move can burn the target if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 8,
+    "name": "Flaming Fists",
+    "power": 110,
+    "element": "Fire",
+    "category": "Natural",
+    "description": "A powerful fire move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 15,
+    "name": "Aqua Blast",
+    "power": 90,
+    "element": "Water",
+    "category": "Mystic",
+    "description": "A powerful water move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 16,
+    "name": "Depth Attack",
+    "power": 90,
+    "element": "Water",
+    "category": "Natural",
+    "description": "A powerful water move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 17,
+    "name": "Torrential Blast",
+    "power": 100,
+    "element": "Water",
+    "category": "Mystic",
+    "description": "The user unleashes torrential waves of water to hit the opponent. This move cures the user and partner’s status conditions and resets stat changes on the target if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 18,
+    "name": "Crosstide",
+    "power": 100,
+    "element": "Water",
+    "category": "Natural",
+    "description": "The user strikes the opponent with a blast of powerful water. This move cures the user and partner’s status conditions and resets stat changes on the target if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 20,
+    "name": "Crashing Waves",
+    "power": 110,
+    "element": "Water",
+    "category": "Natural",
+    "description": "A powerful water move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 27,
+    "name": "Thicket Thrash",
+    "power": 90,
+    "element": "Plant",
+    "category": "Mystic",
+    "description": "A powerful plant move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 28,
+    "name": "Bark Blast",
+    "power": 90,
+    "element": "Plant",
+    "category": "Natural",
+    "description": "A powerful plant move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 29,
+    "name": "Bloomburst",
+    "power": 100,
+    "element": "Plant",
+    "category": "Mystic",
+    "description": "A glittering burst of flowers strikes the opponent. This move can put the target to sleep if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 30,
+    "name": "Petal Scythe",
+    "power": 100,
+    "element": "Plant",
+    "category": "Natural",
+    "description": "Mysterious petals form a devastating blade to damage the opponent. This move can put the target to sleep if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 31,
+    "name": "Untamed Growth",
+    "power": 110,
+    "element": "Plant",
+    "category": "Mystic",
+    "description": "A powerful plant move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 39,
+    "name": "Luminescence",
+    "power": 90,
+    "element": "Light",
+    "category": "Mystic",
+    "description": "A powerful light move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 40,
+    "name": "Flashing Fist",
+    "power": 90,
+    "element": "Light",
+    "category": "Natural",
+    "description": "A powerful light move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 41,
+    "name": "Illuminating Beam",
+    "power": 100,
+    "element": "Light",
+    "category": "Mystic",
+    "description": "A powerful beam made of light strikes the opponent. This move raises the user’s highest offensive stat if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 42,
+    "name": "Sunblade",
+    "power": 100,
+    "element": "Light",
+    "category": "Natural",
+    "description": "The user creates a blade with the power of the sun to damage the opponent. This move raises the user’s highest offensive stat if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 44,
+    "name": "Dawngrasp",
+    "power": 110,
+    "element": "Light",
+    "category": "Natural",
+    "description": "A powerful light move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 51,
+    "name": "Dark Harvest",
+    "power": 90,
+    "element": "Dark",
+    "category": "Mystic",
+    "description": "A powerful dark move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 52,
+    "name": "Shade Slash",
+    "power": 90,
+    "element": "Dark",
+    "category": "Natural",
+    "description": "A powerful dark move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 53,
+    "name": "Total Eclipse",
+    "power": 100,
+    "element": "Dark",
+    "category": "Mystic",
+    "description": "A terrifying shadow surrounds the opponent to do damage. This move can land a critical hit if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 54,
+    "name": "Shadowblade",
+    "power": 100,
+    "element": "Dark",
+    "category": "Natural",
+    "description": "The user creates a blade-like pulse with the power of the shadows to do damage. This move can land a critical hit if used 3 times in a row. ",
+    "tier": 3
+  },
+  {
+    "id": 55,
+    "name": "Night’s Embrace",
+    "power": 110,
+    "element": "Dark",
+    "category": "Mystic",
+    "description": "A powerful dark move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 63,
+    "name": "Soul Contract",
+    "power": 90,
+    "element": "Spirit",
+    "category": "Mystic",
+    "description": "A powerful spirit move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 64,
+    "name": "Oni Slash",
+    "power": 90,
+    "element": "Spirit",
+    "category": "Natural",
+    "description": "A powerful spirit move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 65,
+    "name": "Spirit Beam",
+    "power": 100,
+    "element": "Spirit",
+    "category": "Mystic",
+    "description": "A mysterious beam from a different dimension strikes the opponent. This move recovers half of the user’s max HP if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 66,
+    "name": "Otherside Embrace",
+    "power": 100,
+    "element": "Spirit",
+    "category": "Natural",
+    "description": "Mysterious forces from another dimension hit the opponent. This move recovers half of the user’s max HP if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 68,
+    "name": "Mass Abduction",
+    "power": 110,
+    "element": "Spirit",
+    "category": "Natural",
+    "description": "A powerful spirit move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 75,
+    "name": "Thunderous Boom",
+    "power": 90,
+    "element": "Electric",
+    "category": "Mystic",
+    "description": "A powerful electric move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 76,
+    "name": "Zap Razor",
+    "power": 90,
+    "element": "Electric",
+    "category": "Natural",
+    "description": "A powerful electric move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 77,
+    "name": "Lightning Bolt",
+    "power": 100,
+    "element": "Electric",
+    "category": "Mystic",
+    "description": "A powerful blast of electricity hits the target. This move can paralyze the target if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 78,
+    "name": "Strike Conduit",
+    "power": 100,
+    "element": "Electric",
+    "category": "Natural",
+    "description": "The user strikes the target with electric shakings. This move can paralyze the target if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 79,
+    "name": "Electric Storm",
+    "power": 110,
+    "element": "Electric",
+    "category": "Mystic",
+    "description": "A powerful electric move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 87,
+    "name": "Wind Breaker",
+    "power": 90,
+    "element": "Wind",
+    "category": "Mystic",
+    "description": "A powerful wind move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 88,
+    "name": "Wing Frenzy",
+    "power": 90,
+    "element": "Wind",
+    "category": "Natural",
+    "description": "A powerful wind move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 89,
+    "name": "Vacuum Slice",
+    "power": 100,
+    "element": "Wind",
+    "category": "Mystic",
+    "description": "Powerful wind slices are launched at the target. This move raises the user’s speed if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 90,
+    "name": "Skyfall",
+    "power": 100,
+    "element": "Wind",
+    "category": "Natural",
+    "description": "The user hurls itself from the sky to damage the opponent. This move raises the user’s speed if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 92,
+    "name": "Shear Stream",
+    "power": 110,
+    "element": "Wind",
+    "category": "Natural",
+    "description": "A powerful wind move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 99,
+    "name": "Quicksand Trap",
+    "power": 90,
+    "element": "Earth",
+    "category": "Mystic",
+    "description": "A powerful earth move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 100,
+    "name": "Sandstorm",
+    "power": 90,
+    "element": "Earth",
+    "category": "Natural",
+    "description": "A powerful earth move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 102,
+    "name": "Titanic Quake",
+    "power": 110,
+    "element": "Earth",
+    "category": "Natural",
+    "description": "A powerful earth move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 105,
+    "name": "Seismic Wave",
+    "power": 100,
+    "element": "Earth",
+    "category": "Mystic",
+    "description": "Using the power of earth, the user creates waves to damage the target. This move creates a mystic veil on the user’s side if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 106,
+    "name": "Geologic Burst",
+    "power": 100,
+    "element": "Earth",
+    "category": "Natural",
+    "description": "An outstanding burst directly from the earth hits the target. This move creates a mystic veil on the user’s side if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 111,
+    "name": "Degenerate",
+    "power": 90,
+    "element": "Corrosion",
+    "category": "Mystic",
+    "description": "A powerful corrosion move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 112,
+    "name": "Acrid Bite",
+    "power": 90,
+    "element": "Corrosion",
+    "category": "Natural",
+    "description": "A powerful corrosion move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 113,
+    "name": "Acidic Flux",
+    "power": 100,
+    "element": "Corrosion",
+    "category": "Mystic",
+    "description": "Acidic flux is thrown at the opponent to do damage. This move can corrode the target if used 3 times in a row. ",
+    "tier": 3
+  },
+  {
+    "id": 114,
+    "name": "Sulfuric Sting",
+    "power": 100,
+    "element": "Corrosion",
+    "category": "Natural",
+    "description": "A dangerous sting strikes the target with a poisonous force. This move can corrode the target if used 3 times in a row. ",
+    "tier": 3
+  },
+  {
+    "id": 116,
+    "name": "Chemical Crash",
+    "power": 110,
+    "element": "Corrosion",
+    "category": "Natural",
+    "description": "A powerful corrosion move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 123,
+    "name": "Meditative Strike",
+    "power": 90,
+    "element": "Combat",
+    "category": "Mystic",
+    "description": "A powerful combat move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 124,
+    "name": "Axe Kick",
+    "power": 90,
+    "element": "Combat",
+    "category": "Natural",
+    "description": "A powerful combat move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 125,
+    "name": "Nerve Pulse",
+    "power": 100,
+    "element": "Combat",
+    "category": "Mystic",
+    "description": "Outstanding pulse that shudders the opponent’s awareness. This move raises the user’s highest offensive stat if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 126,
+    "name": "Roundhouse Slam",
+    "power": 100,
+    "element": "Combat",
+    "category": "Natural",
+    "description": "The user slams the target with its physical power. This move raises the user’s highest offensive stat if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 128,
+    "name": "Fist Barrage",
+    "power": 110,
+    "element": "Combat",
+    "category": "Natural",
+    "description": "A powerful combat move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 135,
+    "name": "Steel Blast",
+    "power": 90,
+    "element": "Metal",
+    "category": "Mystic",
+    "description": "A powerful metal move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 136,
+    "name": "Iron Slam",
+    "power": 90,
+    "element": "Metal",
+    "category": "Natural",
+    "description": "A powerful metal move that increases in power when used in succession.",
+    "tier": 2
+  },
+  {
+    "id": 137,
+    "name": "Ferrous Laser",
+    "power": 100,
+    "element": "Metal",
+    "category": "Mystic",
+    "description": "Laser launched at the target with metal power. This move creates a natural veil on the user’s side if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 138,
+    "name": "Metal Grinder",
+    "power": 100,
+    "element": "Metal",
+    "category": "Natural",
+    "description": "The target is pulverized by a metallic grinder. This move creates a natural veil on the user’s side if used 3 times in a row.",
+    "tier": 3
+  },
+  {
+    "id": 140,
+    "name": "Silicon Slashes",
+    "power": 110,
+    "element": "Metal",
+    "category": "Natural",
+    "description": "A powerful metal move that can hit both beasts of the opponent. Its power is reduced by 30% when hitting more than one target.",
+    "tier": 4
+  },
+  {
+    "id": 145,
+    "name": "Shield",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "The user creates a shield that protects it from all moves during the turn. This move cannot be used consecutively.",
+    "tier": null
+  },
+  {
+    "id": 146,
+    "name": "Ferocious Howl",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move raises the user and its partner’s Natural Attack by one stage.",
+    "tier": null
+  },
+  {
+    "id": 147,
+    "name": "Arcane Knowledge",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move raises the user’s Mystic Attack by one stage.",
+    "tier": null
+  },
+  {
+    "id": 148,
+    "name": "Armor Up",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move raises the user's Natural Defense by one stage.",
+    "tier": null
+  },
+  {
+    "id": 149,
+    "name": "Sparkling Barrier",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move raises the user's Mystic Defense by one stage.",
+    "tier": null
+  },
+  {
+    "id": 150,
+    "name": "Spring",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move raises the user's Speed by one stage.",
+    "tier": null
+  },
+  {
+    "id": 151,
+    "name": "Assault Rush",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move raises the user's Natural Attack by two stages.",
+    "tier": null
+  },
+  {
+    "id": 152,
+    "name": "Introspection",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move raises the user's Mystic Attack by two stages.",
+    "tier": null
+  },
+  {
+    "id": 153,
+    "name": "Bunker Down",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move raises the user's Natural Defense by two stages.",
+    "tier": null
+  },
+  {
+    "id": 154,
+    "name": "Glowing Mists",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move raises the user's Mystic Defense by two stages.",
+    "tier": null
+  },
+  {
+    "id": 155,
+    "name": "Acceleration",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move raises the user's Speed by two stages.",
+    "tier": null
+  },
+  {
+    "id": 156,
+    "name": "Team Help",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "This move increases the partner's damage by 50% during the turn.",
+    "tier": null
+  },
+  {
+    "id": 158,
+    "name": "Redirection Sign",
+    "power": 17,
+    "element": "Support",
+    "category": "Status",
+    "description": "Using a lure, the user redirects all moves from the opponent to itself during the turn.",
+    "tier": null
+  },
+  {
+    "id": 159,
+    "name": "Fire Blaze",
+    "power": 17,
+    "element": "Fire",
+    "category": "Status",
+    "description": "The target is hit directly with fire causing it to get burned. It loses some HP every turn and its natural attack is halved.",
+    "tier": null
+  },
+  {
+    "id": 168,
+    "name": "Sleep Pollen",
+    "power": 17,
+    "element": "Plant",
+    "category": "Status",
+    "description": "The user launches a magical pollen to the target causing it to fall asleep for one turn.",
+    "tier": null
+  },
+  {
+    "id": 169,
+    "name": "Nature Protection",
+    "power": 17,
+    "element": "Plant",
+    "category": "Status",
+    "description": "A mysterious force from the nature protects the user's team from status conditions for five turns.",
+    "tier": null
+  },
+  {
+    "id": 177,
+    "name": "Provocation",
+    "power": 17,
+    "element": "Dark",
+    "category": "Status",
+    "description": "The user provokes and enrages the opponent making it unable to use status moves for 3 turns. ",
+    "tier": null
+  },
+  {
+    "id": 182,
+    "name": "Natural Veil",
+    "power": 17,
+    "element": "Spirit",
+    "category": "Status",
+    "description": "The user creates a Veil on its side of the field that reduces the damage taken from natural moves for 5 turns.",
+    "tier": null
+  },
+  {
+    "id": 183,
+    "name": "Mystic Veil",
+    "power": 17,
+    "element": "Spirit",
+    "category": "Status",
+    "description": "The user creates a Veil on its side of the field that reduces the damage taken from mystic moves for 5 turns.",
+    "tier": null
+  },
+  {
+    "id": 184,
+    "name": "Meditate",
+    "power": 17,
+    "element": "Spirit",
+    "category": "Status",
+    "description": "The user concentrates deeply and recovers half of its max HP. The recovery is reduced each turn if this move is used in succession. Paralysis condition makes the recovery to always be 25%.",
+    "tier": null
+  },
+  {
+    "id": 189,
+    "name": "Paralysis Wave",
+    "power": 17,
+    "element": "Electric",
+    "category": "Status",
+    "description": "A sudden wave of electricity is thrown at the opponent causing it to get paralyzed and drastically reducing its speed. ",
+    "tier": null
+  },
+  {
+    "id": 200,
+    "name": "Corrosive Wave",
+    "power": 17,
+    "element": "Corrosion",
+    "category": "Status",
+    "description": "A corrosive wave hits the target’s body causing it to get corroded. The target loses a great amount of HP every turn.",
+    "tier": null
+  },
+  {
+    "id": 210,
+    "name": "Soft Reset",
+    "power": 17,
+    "element": "Spirit",
+    "category": "Status",
+    "description": "A mysterious mist affects the battle field and resets all stat changes.",
+    "tier": null
+  },
+  {
+    "id": 211,
+    "name": "Jungle Healing",
+    "power": 17,
+    "element": "Plant",
+    "category": "Status",
+    "description": "With the power of the jungle, the user’s entire team is recovered from every status condition.",
+    "tier": null
+  },
+  {
+    "id": 212,
+    "name": "Charging Flame",
+    "power": 50,
+    "element": "Fire",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 213,
+    "name": "Charging Wave",
+    "power": 50,
+    "element": "Water",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 214,
+    "name": "Charging Leaf",
+    "power": 50,
+    "element": "Plant",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 215,
+    "name": "Charging Beam",
+    "power": 50,
+    "element": "Light",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 216,
+    "name": "Charging Shadow",
+    "power": 50,
+    "element": "Dark",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 217,
+    "name": "Charging Spell",
+    "power": 50,
+    "element": "Spirit",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 218,
+    "name": "Charging Bolt",
+    "power": 50,
+    "element": "Electric",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 219,
+    "name": "Charging Gust",
+    "power": 50,
+    "element": "Wind",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 220,
+    "name": "Charging Atom",
+    "power": 50,
+    "element": "Earth",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 221,
+    "name": "Charging Oxide",
+    "power": 50,
+    "element": "Corrosion",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 222,
+    "name": "Charging Pulse",
+    "power": 50,
+    "element": "Combat",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 223,
+    "name": "Charging Iron",
+    "power": 50,
+    "element": "Metal",
+    "category": "Mystic",
+    "description": "This move inflicts damage with the user’s highest offensive stat, the user then increases its Natural or Mystic Attack. This move doubles in power if resisted by a beast with the same element of the move.",
+    "tier": 4
+  },
+  {
+    "id": 224,
+    "name": "Maddening Scream",
+    "power": 17,
+    "element": "Light",
+    "category": "Status",
+    "description": "The user madly screams at the target causing it to reduce its Natural and Mystic Attack by one stage. This move will go first when used the first turn the beast is sent to the battle.",
+    "tier": null
+  }
+]

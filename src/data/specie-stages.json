@@ -1,0 +1,752 @@
+[
+  {
+    "id": 3,
+    "specieId": 1,
+    "stage": 3,
+    "variation": "fire",
+    "elements": ["Light", "Fire"],
+    "movePoolIds": [
+      42, 6, 136, 100, 151, 155, 145, 64, 76, 148, 149, 189, 159, 156, 177, 8,
+      215, 146
+    ],
+    "baseStats": {
+      "hp": 90,
+      "atk": 134,
+      "def": 95,
+      "speed": 106,
+      "mAtk": 80,
+      "mDef": 95
+    }
+  },
+  {
+    "id": 5,
+    "specieId": 1,
+    "stage": 3,
+    "variation": "water",
+    "elements": ["Light", "Water"],
+    "movePoolIds": [
+      42, 18, 64, 136, 151, 153, 154, 155, 156, 145, 76, 100, 189, 177, 184, 20,
+      215, 146
+    ],
+    "baseStats": {
+      "hp": 90,
+      "atk": 131,
+      "def": 115,
+      "speed": 89,
+      "mAtk": 60,
+      "mDef": 115
+    }
+  },
+  {
+    "id": 7,
+    "specieId": 1,
+    "stage": 3,
+    "variation": "plant",
+    "elements": ["Light", "Plant"],
+    "movePoolIds": [
+      41, 29, 135, 63, 152, 145, 99, 75, 148, 149, 155, 189, 156, 177, 31, 214
+    ],
+    "baseStats": {
+      "hp": 90,
+      "atk": 74,
+      "def": 95,
+      "speed": 97,
+      "mAtk": 131,
+      "mDef": 113
+    }
+  },
+  {
+    "id": 9,
+    "specieId": 1,
+    "stage": 3,
+    "variation": "electric",
+    "elements": ["Light", "Electric"],
+    "movePoolIds": [
+      41, 77, 135, 63, 189, 145, 3, 111, 150, 153, 152, 154, 156, 177, 79, 218
+    ],
+    "baseStats": {
+      "hp": 90,
+      "atk": 75,
+      "def": 80,
+      "speed": 126,
+      "mAtk": 134,
+      "mDef": 95
+    }
+  },
+  {
+    "id": 12,
+    "specieId": 2,
+    "stage": 3,
+    "variation": "fire",
+    "elements": ["Light", "Fire"],
+    "movePoolIds": [
+      42, 6, 124, 88, 151, 155, 145, 28, 100, 153, 154, 159, 210, 158
+    ],
+    "baseStats": {
+      "hp": 100,
+      "atk": 127,
+      "def": 95,
+      "speed": 102,
+      "mAtk": 81,
+      "mDef": 95
+    }
+  },
+  {
+    "id": 14,
+    "specieId": 2,
+    "stage": 3,
+    "variation": "water",
+    "elements": ["Light", "Water"],
+    "movePoolIds": [
+      41, 17, 123, 87, 152, 145, 27, 99, 153, 154, 155, 210, 158, 184
+    ],
+    "baseStats": {
+      "hp": 100,
+      "atk": 75,
+      "def": 115,
+      "speed": 79,
+      "mAtk": 116,
+      "mDef": 115
+    }
+  },
+  {
+    "id": 16,
+    "specieId": 2,
+    "stage": 3,
+    "variation": "plant",
+    "elements": ["Light", "Plant"],
+    "movePoolIds": [
+      42, 30, 124, 88, 41, 29, 87, 123, 151, 152, 145, 76, 100, 75, 99, 148,
+      149, 155, 210, 158
+    ],
+    "baseStats": {
+      "hp": 100,
+      "atk": 125,
+      "def": 120,
+      "speed": 81,
+      "mAtk": 106,
+      "mDef": 68
+    }
+  },
+  {
+    "id": 18,
+    "specieId": 2,
+    "stage": 3,
+    "variation": "electric",
+    "elements": ["Light", "Electric"],
+    "movePoolIds": [
+      41, 77, 123, 87, 155, 145, 27, 99, 153, 152, 154, 189, 210, 158, 218
+    ],
+    "baseStats": {
+      "hp": 100,
+      "atk": 81,
+      "def": 87,
+      "speed": 118,
+      "mAtk": 127,
+      "mDef": 87
+    }
+  },
+  {
+    "id": 21,
+    "specieId": 3,
+    "stage": 3,
+    "variation": "fire",
+    "elements": ["Light", "Fire"],
+    "movePoolIds": [
+      42, 6, 112, 88, 151, 155, 200, 145, 28, 16, 153, 154, 159, 169, 182, 183,
+      211, 44, 212, 224, 146
+    ],
+    "baseStats": {
+      "hp": 130,
+      "atk": 122,
+      "def": 95,
+      "speed": 98,
+      "mAtk": 60,
+      "mDef": 95
+    }
+  },
+  {
+    "id": 23,
+    "specieId": 3,
+    "stage": 3,
+    "variation": "water",
+    "elements": ["Light", "Water"],
+    "movePoolIds": [
+      42, 18, 112, 136, 151, 152, 155, 200, 145, 28, 88, 148, 149, 169, 182,
+      183, 211, 184, 224, 213
+    ],
+    "baseStats": {
+      "hp": 130,
+      "atk": 90,
+      "def": 126,
+      "speed": 63,
+      "mAtk": 60,
+      "mDef": 131
+    }
+  },
+  {
+    "id": 25,
+    "specieId": 3,
+    "stage": 3,
+    "variation": "plant",
+    "elements": ["Light", "Plant"],
+    "movePoolIds": [
+      42, 30, 112, 16, 151, 41, 29, 111, 15, 152, 155, 200, 145, 136, 88, 135,
+      87, 148, 149, 169, 182, 183, 211, 44, 214, 224, 146
+    ],
+    "baseStats": {
+      "hp": 130,
+      "atk": 113,
+      "def": 122,
+      "speed": 68,
+      "mAtk": 69,
+      "mDef": 98
+    }
+  },
+  {
+    "id": 27,
+    "specieId": 3,
+    "stage": 3,
+    "variation": "electric",
+    "elements": ["Light", "Electric"],
+    "movePoolIds": [
+      41, 77, 111, 87, 152, 155, 200, 145, 135, 15, 153, 154, 189, 169, 182,
+      183, 211, 218, 224
+    ],
+    "baseStats": {
+      "hp": 130,
+      "atk": 60,
+      "def": 88,
+      "speed": 112,
+      "mAtk": 122,
+      "mDef": 88
+    }
+  },
+  {
+    "id": 30,
+    "specieId": 4,
+    "stage": 3,
+    "elements": ["Plant", "Water"],
+    "movePoolIds": [
+      29, 17, 99, 39, 200, 148, 149, 145, 123, 75, 152, 155, 189, 159, 210, 31,
+      214
+    ],
+    "baseStats": {
+      "hp": 120,
+      "atk": 70,
+      "def": 113,
+      "speed": 62,
+      "mAtk": 122,
+      "mDef": 113
+    }
+  },
+  {
+    "id": 33,
+    "specieId": 5,
+    "stage": 3,
+    "elements": ["Fire", "Spirit"],
+    "movePoolIds": [
+      6, 66, 100, 52, 151, 5, 65, 99, 51, 152, 159, 145, 40, 28, 39, 27, 153,
+      154, 150, 189, 210, 182, 183, 184, 68, 217
+    ],
+    "baseStats": {
+      "hp": 91,
+      "atk": 125,
+      "def": 75,
+      "speed": 109,
+      "mAtk": 125,
+      "mDef": 75
+    }
+  },
+  {
+    "id": 36,
+    "specieId": 6,
+    "stage": 3,
+    "elements": ["Water", "Metal"],
+    "movePoolIds": [
+      18, 138, 64, 28, 155, 145, 112, 100, 153, 200, 177, 140, 213, 223
+    ],
+    "baseStats": {
+      "hp": 120,
+      "atk": 125,
+      "def": 140,
+      "speed": 57,
+      "mAtk": 88,
+      "mDef": 70
+    }
+  },
+  {
+    "id": 39,
+    "specieId": 7,
+    "stage": 3,
+    "elements": ["Electric", "Earth"],
+    "movePoolIds": [
+      78, 106, 124, 40, 146, 77, 105, 3, 135, 152, 145, 136, 27, 153, 154, 189,
+      156, 102, 218, 151
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 165,
+      "def": 72,
+      "speed": 35,
+      "mAtk": 116,
+      "mDef": 72
+    }
+  },
+  {
+    "id": 42,
+    "specieId": 8,
+    "stage": 3,
+    "elements": ["Dark", "Fire"],
+    "movePoolIds": [
+      54, 6, 28, 100, 151, 155, 145, 124, 112, 148, 149, 159, 177, 8, 216, 146
+    ],
+    "baseStats": {
+      "hp": 95,
+      "atk": 121,
+      "def": 100,
+      "speed": 107,
+      "mAtk": 72,
+      "mDef": 105
+    }
+  },
+  {
+    "id": 45,
+    "specieId": 9,
+    "stage": 3,
+    "elements": ["Light", "Spirit"],
+    "movePoolIds": [
+      65, 41, 27, 87, 169, 189, 145, 123, 99, 148, 152, 149, 155, 156, 182, 183,
+      210, 184, 159, 215, 217
+    ],
+    "baseStats": {
+      "hp": 110,
+      "atk": 60,
+      "def": 115,
+      "speed": 108,
+      "mAtk": 92,
+      "mDef": 115
+    }
+  },
+  {
+    "id": 48,
+    "specieId": 10,
+    "stage": 3,
+    "elements": ["Wind", "Metal"],
+    "movePoolIds": [
+      90, 138, 76, 112, 151, 145, 124, 100, 153, 154, 155, 210, 184, 92, 219,
+      223, 224, 146
+    ],
+    "baseStats": {
+      "hp": 120,
+      "atk": 120,
+      "def": 120,
+      "speed": 75,
+      "mAtk": 55,
+      "mDef": 110
+    }
+  },
+  {
+    "id": 51,
+    "specieId": 11,
+    "stage": 3,
+    "elements": ["Corrosion", "Combat"],
+    "movePoolIds": [
+      114, 126, 52, 100, 151, 200, 145, 28, 16, 153, 154, 155, 169, 177, 116,
+      221
+    ],
+    "baseStats": {
+      "hp": 115,
+      "atk": 145,
+      "def": 83,
+      "speed": 100,
+      "mAtk": 47,
+      "mDef": 110
+    }
+  },
+  {
+    "id": 54,
+    "specieId": 12,
+    "stage": 3,
+    "elements": ["Earth", "Spirit"],
+    "movePoolIds": [
+      106, 66, 52, 40, 155, 145, 76, 124, 151, 153, 154, 177, 184, 68, 220
+    ],
+    "baseStats": {
+      "hp": 100,
+      "atk": 147,
+      "def": 93,
+      "speed": 101,
+      "mAtk": 66,
+      "mDef": 93
+    }
+  },
+  {
+    "id": 57,
+    "specieId": 13,
+    "stage": 3,
+    "elements": ["Dark", "Wind"],
+    "movePoolIds": [
+      89, 53, 111, 63, 177, 152, 27, 3, 145, 148, 149, 155, 169, 210, 55, 219
+    ],
+    "baseStats": {
+      "hp": 120,
+      "atk": 60,
+      "def": 101,
+      "speed": 84,
+      "mAtk": 129,
+      "mDef": 106
+    }
+  },
+  {
+    "id": 60,
+    "specieId": 14,
+    "stage": 3,
+    "elements": ["Metal", "Corrosion"],
+    "movePoolIds": [
+      138, 114, 16, 100, 137, 113, 39, 51, 210, 145, 4, 3, 200, 147, 151, 184,
+      221
+    ],
+    "baseStats": {
+      "hp": 120,
+      "atk": 91,
+      "def": 140,
+      "speed": 46,
+      "mAtk": 93,
+      "mDef": 110
+    }
+  },
+  {
+    "id": 63,
+    "specieId": 15,
+    "stage": 3,
+    "elements": ["Fire", "Earth"],
+    "movePoolIds": [
+      5, 105, 51, 135, 145, 39, 111, 153, 154, 152, 159, 177, 212
+    ],
+    "baseStats": {
+      "hp": 100,
+      "atk": 71,
+      "def": 100,
+      "speed": 87,
+      "mAtk": 152,
+      "mDef": 90
+    }
+  },
+  {
+    "id": 66,
+    "specieId": 16,
+    "stage": 3,
+    "elements": ["Plant", "Combat"],
+    "movePoolIds": [
+      30, 126, 88, 52, 151, 64, 40, 145, 153, 154, 155, 182, 183, 169, 168, 211,
+      128, 222
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 118,
+      "def": 107,
+      "speed": 83,
+      "mAtk": 75,
+      "mDef": 112
+    }
+  },
+  {
+    "id": 69,
+    "specieId": 17,
+    "stage": 3,
+    "elements": ["Electric", "Wind"],
+    "movePoolIds": [
+      78, 90, 28, 52, 100, 40, 151, 77, 89, 27, 99, 51, 39, 153, 147, 154, 155,
+      189, 169, 145, 218
+    ],
+    "baseStats": {
+      "hp": 100,
+      "atk": 90,
+      "def": 75,
+      "speed": 135,
+      "mAtk": 125,
+      "mDef": 75
+    }
+  },
+  {
+    "id": 72,
+    "specieId": 18,
+    "stage": 3,
+    "elements": ["Combat", "Earth"],
+    "movePoolIds": [
+      126, 106, 28, 136, 151, 145, 4, 52, 153, 154, 155, 177, 184, 102, 222, 146
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 145,
+      "def": 90,
+      "speed": 85,
+      "mAtk": 45,
+      "mDef": 90
+    }
+  },
+  {
+    "id": 75,
+    "specieId": 19,
+    "stage": 3,
+    "elements": ["Spirit", "Dark"],
+    "movePoolIds": [
+      54, 66, 28, 136, 151, 4, 124, 53, 65, 111, 135, 147, 123, 3, 177, 210,
+      156, 159, 145, 216
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 80,
+      "def": 130,
+      "speed": 30,
+      "mAtk": 80,
+      "mDef": 135
+    }
+  },
+  {
+    "id": 78,
+    "specieId": 20,
+    "stage": 3,
+    "elements": ["Corrosion", "Plant"],
+    "movePoolIds": [
+      30, 114, 100, 124, 151, 29, 113, 99, 123, 152, 40, 63, 39, 64, 145, 200,
+      148, 149, 169, 211, 184, 221
+    ],
+    "baseStats": {
+      "hp": 130,
+      "atk": 95,
+      "def": 95,
+      "speed": 45,
+      "mAtk": 140,
+      "mDef": 95
+    }
+  },
+  {
+    "id": 81,
+    "specieId": 21,
+    "stage": 3,
+    "elements": ["Earth", "Dark"],
+    "movePoolIds": [
+      105, 53, 111, 123, 152, 75, 27, 153, 149, 155, 189, 145, 177, 55, 220
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 50,
+      "def": 90,
+      "speed": 93,
+      "mAtk": 137,
+      "mDef": 125
+    }
+  },
+  {
+    "id": 84,
+    "specieId": 22,
+    "stage": 3,
+    "elements": ["Metal", "Fire"],
+    "movePoolIds": [
+      137, 5, 111, 123, 63, 51, 177, 153, 154, 155, 145, 156, 152, 159, 212,
+      223, 224
+    ],
+    "baseStats": {
+      "hp": 100,
+      "atk": 60,
+      "def": 120,
+      "speed": 60,
+      "mAtk": 150,
+      "mDef": 110
+    }
+  },
+  {
+    "id": 87,
+    "specieId": 23,
+    "stage": 3,
+    "elements": ["Electric", "Corrosion"],
+    "movePoolIds": [
+      114, 78, 28, 52, 151, 124, 64, 177, 149, 200, 189, 145, 184, 116, 218
+    ],
+    "baseStats": {
+      "hp": 122,
+      "atk": 170,
+      "def": 88,
+      "speed": 25,
+      "mAtk": 60,
+      "mDef": 135
+    }
+  },
+  {
+    "id": 90,
+    "specieId": 24,
+    "stage": 3,
+    "elements": ["Metal", "Earth"],
+    "movePoolIds": [
+      106, 138, 64, 124, 151, 105, 137, 63, 123, 152, 177, 4, 28, 3, 27, 145,
+      153, 154, 155, 140, 220, 146
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 115,
+      "def": 111,
+      "speed": 81,
+      "mAtk": 93,
+      "mDef": 95
+    }
+  },
+  {
+    "id": 93,
+    "specieId": 25,
+    "stage": 3,
+    "elements": ["Spirit", "Corrosion"],
+    "movePoolIds": [
+      113, 65, 99, 51, 210, 27, 3, 152, 145, 200, 182, 183, 169, 148, 149, 184,
+      217, 224
+    ],
+    "baseStats": {
+      "hp": 121,
+      "atk": 53,
+      "def": 105,
+      "speed": 64,
+      "mAtk": 120,
+      "mDef": 137
+    }
+  },
+  {
+    "id": 96,
+    "specieId": 26,
+    "stage": 3,
+    "elements": ["Wind", "Combat"],
+    "movePoolIds": [
+      90, 126, 136, 28, 40, 4, 177, 153, 154, 155, 145, 156, 158, 184, 92, 219
+    ],
+    "baseStats": {
+      "hp": 90,
+      "atk": 132,
+      "def": 90,
+      "speed": 123,
+      "mAtk": 75,
+      "mDef": 90
+    }
+  },
+  {
+    "id": 99,
+    "specieId": 27,
+    "stage": 3,
+    "elements": ["Plant", "Dark"],
+    "movePoolIds": [
+      30, 54, 88, 64, 136, 4, 29, 99, 177, 123, 3, 53, 63, 145, 148, 149, 155,
+      159, 182, 183, 211, 168
+    ],
+    "baseStats": {
+      "hp": 109,
+      "atk": 95,
+      "def": 140,
+      "speed": 76,
+      "mAtk": 80,
+      "mDef": 100
+    }
+  },
+  {
+    "id": 102,
+    "specieId": 28,
+    "stage": 3,
+    "elements": ["Combat", "Electric"],
+    "movePoolIds": [
+      126, 78, 52, 136, 151, 125, 77, 152, 99, 3, 145, 40, 100, 135, 87, 153,
+      154, 155, 156, 177, 158, 184, 79, 189
+    ],
+    "baseStats": {
+      "hp": 107,
+      "atk": 135,
+      "def": 60,
+      "speed": 113,
+      "mAtk": 125,
+      "mDef": 60
+    }
+  },
+  {
+    "id": 105,
+    "specieId": 29,
+    "stage": 3,
+    "elements": ["Water", "Dark"],
+    "movePoolIds": [
+      18, 54, 112, 100, 124, 136, 151, 153, 154, 177, 200, 210, 184, 145, 20,
+      213
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 154,
+      "def": 105,
+      "speed": 44,
+      "mAtk": 57,
+      "mDef": 80
+    }
+  },
+  {
+    "id": 108,
+    "specieId": 30,
+    "stage": 3,
+    "elements": ["Dark", "Electric"],
+    "movePoolIds": [
+      54, 78, 28, 124, 151, 64, 136, 177, 153, 154, 189, 156, 145, 152, 150, 216
+    ],
+    "baseStats": {
+      "hp": 87,
+      "atk": 144,
+      "def": 86,
+      "speed": 111,
+      "mAtk": 89,
+      "mDef": 83
+    }
+  },
+  {
+    "id": 111,
+    "specieId": 31,
+    "stage": 3,
+    "elements": ["Water", "Spirit"],
+    "movePoolIds": [
+      17, 65, 135, 39, 155, 145, 111, 51, 147, 154, 153, 182, 183, 210, 213, 184
+    ],
+    "baseStats": {
+      "hp": 30,
+      "atk": 70,
+      "def": 110,
+      "speed": 115,
+      "mAtk": 165,
+      "mDef": 110
+    }
+  },
+  {
+    "id": 114,
+    "specieId": 32,
+    "stage": 3,
+    "elements": ["Combat", "Metal"],
+    "movePoolIds": [
+      126, 138, 28, 76, 40, 64, 151, 148, 149, 155, 189, 145, 128, 222
+    ],
+    "baseStats": {
+      "hp": 110,
+      "atk": 130,
+      "def": 80,
+      "speed": 104,
+      "mAtk": 96,
+      "mDef": 80
+    }
+  },
+  {
+    "id": 117,
+    "specieId": 33,
+    "stage": 3,
+    "elements": ["Wind", "Corrosion"],
+    "movePoolIds": [
+      89, 113, 15, 63, 3, 135, 200, 149, 147, 184, 169, 145, 148, 159, 150, 219
+    ],
+    "baseStats": {
+      "hp": 87,
+      "atk": 84,
+      "def": 75,
+      "speed": 137,
+      "mAtk": 142,
+      "mDef": 75
+    }
+  }
+]

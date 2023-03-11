@@ -1,0 +1,200 @@
+[
+  {
+    "description": "One of the original beasts of the Island - the Argos are said to have inherited the Island spirit of an ancient guardian. They’re known to develop a strong protective attitude towards Islanders they bond with, and are often attracted to those that are loyal.",
+    "id": 1,
+    "name": "Argos",
+    "rarity": "starter"
+  },
+  {
+    "description": "Frequently called the ‘Treetop surveyors’, the Koji have a knack for intruding on the Islander’s business. Their curiosity tends to get them into trouble, but their lovable nature and eagerness to contribute to the community keeps them in good favor with the Island’s inhabitants.",
+    "id": 2,
+    "name": "Koji",
+    "rarity": "starter"
+  },
+  {
+    "description": "The Torudo have inhabited the Beach and numerous swamplands across the Island for centuries. While they may not look it, the Torudo hold an ancient knowledge and understanding of the Island. So much so that a new practice began for Islanders who sought guidance. This involved Islanders traveling to the swamplands seeking the ‘Wisdom of the Waters.’",
+    "id": 3,
+    "name": "Torudo",
+    "rarity": "starter"
+  },
+  {
+    "description": "Most Hydrakes create their dens in the watery tunnels between the Forest and Beach, and are often at the forefront of underground dungeons. The stripes along their bodies have been observed to represent their age, as well as provide better camouflage as they swim or hang from trees.",
+    "id": 4,
+    "name": "Hydrake",
+    "rarity": "core"
+  },
+  {
+    "description": "These little creatures live calm and curious lives while basking in the heat of the Island’s volcano, Mount Vogoro. Adventurers have found Mandor to have been swimming or bathing in lava. They believe the Mandor do this to retain heat in their body so that they may leave the volcano to find food. With Mount Vogoro containing a spiritual connection to the Island’s past, the Mandor eventually reach a form of enlightenment from retaining its lava.",
+    "id": 5,
+    "name": "Mandor",
+    "rarity": "core"
+  },
+  {
+    "description": "The Crakos are the self-proclaimed rulers of the Beach. Known to be aggressive towards outsiders, these Beasts look for strong materials along the shore to attach to their shells - ensuring they can handle any intruder. The Crakos especially have a disdain for denizens of the Deep Sea.",
+    "id": 6,
+    "name": "Crakos",
+    "rarity": "core"
+  },
+  {
+    "description": "A herd of Rhyshock is considered one of the Great Wonders of Kuroro Island. With their notably long lifespans, their horns have been observed to never stop growing; to the point where they act as lightning attractors. It’s been noted that a Rhyshock reaches adulthood when lightning first strikes its horn. Adventurers have called a herd of Rhyshock a ‘walking storm’.",
+    "id": 7,
+    "name": "Rhyshock",
+    "rarity": "core"
+  },
+  {
+    "description": "The first Doxus was found in a Dark Forest cave, circling a pile of blue embers. As the adventuring party moved closer, the Beast growled; as if protecting its kin. The embers rose and were absorbed into the Doxus, and it grew in size as its body became covered in flames. Swinging its tail, it sent an arc of fire towards the group. Their burn scars still glow blue to this day.",
+    "id": 8,
+    "name": "Doxus",
+    "rarity": "core"
+  },
+  {
+    "description": "One of the few Kuroro Beasts that can interact with the Island's spirits. Spindal are found in areas of Kuroro Island that have spiritual significance to the Ancient inhabitants. Adventurers have observed them communicating and playing with an unseen presence, and occasionally, the spiral on their tails emit a soft blue light.",
+    "id": 9,
+    "name": "Spindal",
+    "rarity": "core"
+  },
+  {
+    "description": "These aggressive avians are born with iron bills. They spend their early lives learning to hunt and looking to sharpen their beaks on stone surfaces. Once a Corvax finds a suitable place to sharpen, they use only that stone - eventually building a nest once they fully form the intimidating axe-like shape of their beak. Villagers say that if you’re able to see the scratches on a sharpening stone - you’re too close to a Corvax nest.",
+    "id": 10,
+    "name": "Corvax",
+    "rarity": "core"
+  },
+  {
+    "description": "The sludge from Lagoona Nexus is known to contain powerful toxins and acids that even eat away at metals. Due to the environment’s exclusivity, the inhabitant creatures have become extremely territorial and are prone to intraspecific rivalries. So much so, that Drazil bones eventually shift to form natural weapons that are coated in poisons.",
+    "id": 11,
+    "name": "Drazil",
+    "rarity": "core"
+  },
+  {
+    "description": "Though they may not look too impressed, the Pangora do like to have their fun rolling around the flatlands of Kuroro Island. The Pangora have been observed to be a very spiritual group of creatures - often taking the time to sit together in meditation, basking in the sun while using the shells of their dead as instruments.",
+    "id": 12,
+    "name": "Pangora",
+    "rarity": "core"
+  },
+  {
+    "description": "The Darquill were originally found perched atop a tall and jagged castle in the Dark Forest. They looked down on the passing adventurers with judgmental eyes that almost seemed to threaten any passage into the castle. To this day, no adventurer has entered with the idea of being shredded apart looming above them.",
+    "id": 13,
+    "name": "Darquill",
+    "rarity": "core"
+  },
+  {
+    "description": "Streams of a thick purple smog have been sighted, rising through cracks in the earth throughout the Island. An adventuring party delved below and followed the smog to a large metallic door. Finally managing to open it, they were surprised to see an underground factory left by the Ancients. Within it, the complex blueprints for the Graildon. A Beast designed to convert the toxic sludges of the Island to its own energy. It seems like the Graildon were being designed for a large battle.",
+    "id": 14,
+    "name": "Graildon",
+    "rarity": "core"
+  },
+  {
+    "description": "The Armanite are born directly from the molten rock of Mount Vogoro. Researchers have theorized that they’re a natural defence mechanism the volcano creates for itself to defer invaders. Depictions along the interior of Mount Vogoro show the Armanite all simultaneously erupting. However, the reason for this occurrence is not clear.",
+    "id": 15,
+    "name": "Armanite",
+    "rarity": "core"
+  },
+  {
+    "description": "A sentinel molded from the woods inhabited by an Island Spirit of an ancient guardian. The Entik take their duty of protecting forest sanctuaries seriously, even till this day. Embedded deep within their nature, the Entik struggle to understand themselves outside of forests. Despite that, these brave beasts have been known to defend their homes even against the fires of Mount Vogoro.",
+    "id": 16,
+    "name": "Entik",
+    "rarity": "core"
+  },
+  {
+    "description": "The light producing organ this Beast carries is its most notable feature. New islanders exploring the forests of their new home have come to notice many ‘flying lamps’ in the area. While it's a beautiful sight from a distance, the Stormstinger are prone to lightly electrocuting people as they fly by.",
+    "id": 17,
+    "name": "Stormstinger",
+    "rarity": "core"
+  },
+  {
+    "description": "A beast with a bad temper; these creatures swiftly go from timid to aggressive once their adult tusks come in. With the alpha males always looking to pick a fight to prove their superiority, the Islanders named this creature after the ancient Island spirit of fighting, the Tusk King.",
+    "id": 18,
+    "name": "Tusking",
+    "rarity": "core"
+  },
+  {
+    "description": "A thing of nightmares, one of the Island inhabitants’ worst fears is running into Soultan. Essentially an accumulation of bad energy in humanoid form, various Soultan have been spotted in different sizes. It’s been noted that they have a tendency to be vengeful, or perform odd tasks that some inhabitants call ‘unfinished business’.",
+    "id": 19,
+    "name": "Soultan",
+    "rarity": "core"
+  },
+  {
+    "description": "Tribes of Dhrog are very tight communities made up of eager youngins and age-worn elders constantly passing on their ancient ways. Dhrog are set to take three journeys in their lifetimes. Their first in their childhood, where they’re sent into the Walking Woods to search for their staff. The second, into the Dark Forest to witness horror. Finally, the last journey is into death - where they experience the spiritual realm.",
+    "id": 20,
+    "name": "Dhrog",
+    "rarity": "rare"
+  },
+  {
+    "description": "An adventurer exploring the Dark Forest once came across a hole in a tree stump. The sporadic sounds of skittering on wood drew him closer, and his curiosity took over. Afraid, he poked his head into the hole only to see a Mantara wriggling below. Based on multiple trips and trial and error, studies show that not even 20% of the Mantara tunnel network has been discovered.",
+    "id": 21,
+    "name": "Mantara",
+    "rarity": "rare"
+  },
+  {
+    "description": "After translating ancient text found within Mount Vogoro, researchers have learned that the Ironhound were forged in the Mountains by a specific clan of bygone Islanders. They were discovered to be enemies of the Ancient Guardian, and as such, built their own version of Argos.",
+    "id": 22,
+    "name": "Inferus",
+    "rarity": "rare"
+  },
+  {
+    "description": "The Golsting are generally found at Oasis’ where other Beasts travel to for food and drink. With carapaces carrying an electric current, the Golsting\n typically hide in the water, awaiting a creature coming to drink. The water stuns the creature, giving the Golsting a chance to strike their prey.",
+    "id": 23,
+    "name": "Golsting",
+    "rarity": "rare"
+  },
+  {
+    "description": "During an early archeological excavation led by Professor Otium, a researcher stumbled upon the fossils of a long forgotten creature of Kuroro Island. It wasn’t until they had uncovered a third that they realized it was no fossil. The Metalodon have thick metallic layers over their bodies that have a strong magnetic pull. By burying themselves, they’re able to attract various minerals and ore to harden their skin.",
+    "id": 24,
+    "name": "Metalodon",
+    "rarity": "rare"
+  },
+  {
+    "description": "Deep within dark forests where bad spirits lay influence on their surroundings, these creatures cast their glowing webs. The glow is said to be enticing, and some adventures have willingly walked into them before understanding what they were. However, these webs don’t catch the physical, but the spiritual. The Malweave catch the spirits of individuals and other beasts, wrapping them up in their web to feed to their young. As the creatures feed, they develop traits on their abdomen reflecting the spirits they’ve consumed.",
+    "id": 25,
+    "name": "Malweave",
+    "rarity": "rare"
+  },
+  {
+    "description": "These nocturnal creatures spend their early lives out of sight, only exploring the forest for food and nesting materials when certain that they won’t be seen. A seemingly easy prey for many other Beasts, the Zephyrus have no choice but to learn to fight. Based on their humanoid movements and attitude, observers assume that long ago, an Ancient inhabitant of the island taught these Beasts how to survive.",
+    "id": 26,
+    "name": "Zephyrus",
+    "rarity": "rare"
+  },
+  {
+    "description": "This Beast is no ordinary flytrap. Shadovine are known to prey on larger avians, as they camouflage themselves throughout the Forest. When a mature Shadovine dies, its body decomposes only to leave a few hefty seeds. The more a Shadovine has fed throughout its life, the more seeds it will leave. This evolutionary trait has been known to cause infestations of Shadovine in certain parts of the Forest.",
+    "id": 27,
+    "name": "Shadovine",
+    "rarity": "rare"
+  },
+  {
+    "description": "Upon the flat mountaintops known as “Nuba-Hongor”, the Shoku train relentlessly. Their combative culture has always remained simple and refined. They spend their lives climbing ranks and surpass one another in friendly or aggressive competition. The bases of the Nuba-Hongor mountaintops are often littered with the bones of Shoku who have lost a wrestling match to the death.",
+    "id": 28,
+    "name": "Shoku",
+    "rarity": "rare"
+  },
+  {
+    "description": "The shells of these creatures are hard as diamonds, and have been discovered to be quite in demand from collectors, jewelers and even the military. The price must be high for poachers to risk their lives by diving into the depths of the Deep Sea looking for Darktide nests.",
+    "id": 29,
+    "name": "Darktide",
+    "rarity": "rare"
+  },
+  {
+    "description": "A folktale had been brewing throughout the village... That a Beast had been wreaking havoc and stealing power during the night. The tale became a reality when an adventurer spotted a Raikuma hanging from a lamp post, drinking the electricity. With sparks falling from the creature’s mouth, the Raikuma noticed, baring its fangs as it disappeared with a flash.",
+    "id": 30,
+    "name": "Raikuma",
+    "rarity": "epic"
+  },
+  {
+    "description": "A species that once was, and still is. The Basskelon refuse their extinction through their connection to one of the Island’s Gods, who was exiled to the Deep Sea. Despite their lack of eyes, it’s said that the Exiled Ancient still watches the Island through these creatures. Though, without completely understanding yet, they’re bestowed new eyes when they learn to break free of the Exiled Ancient’s control.",
+    "id": 31,
+    "name": "Basskelon",
+    "rarity": "epic"
+  },
+  {
+    "description": "The Iron Arbs is a section of the Forest that researchers believe was an advanced, technological settlement. The trees have metallic bark that secrete a mineral filled sap; which the Chromantis have grown accustomed to. These creatures layer themselves in the sap, toughening their carapaces so that they can fight for mates.",
+    "id": 32,
+    "name": "Chromantis",
+    "rarity": "epic"
+  },
+  {
+    "description": "The toxic fumes from the Island’s volcanoes are expelled through wind tunnel networks. Not many beasts can withstand this harsh environment like the Vitorian. With powerful wings and an evolutionary immunity to various poisons, the Vitorian reside in high caves throughout the valleys.",
+    "id": 33,
+    "name": "Vitorian",
+    "rarity": "epic"
+  }
+]
