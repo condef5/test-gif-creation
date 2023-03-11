@@ -25,40 +25,25 @@ body {
   justify-content: center;
 }
 
-.gradient-green {
+.gradient-brand-green {
   background-image: linear-gradient(
     135deg,
-    hsl(155deg 96% 40%) 0%,
-    hsl(156deg 71% 24%) 33%,
-    hsl(218deg 35% 12% / 70%) 50%,
-    hsl(156deg 71% 24%) 67%,
-    hsl(155deg 96% 40%) 100%
+    #00fa8e -3.02%,
+    #244846 39.28%,
+    #292f3c 50.17%,
+    #234946 61.71%,
+    #00d97f 102.08%
   );
 }
 
-.gradient-card {
-  background-image: linear-gradient(
-    180deg,
-    hsl(160deg 86% 33%) 0%,
-    hsl(171deg 35% 24%) 37%,
-    hsl(209deg 26% 19%) 47%,
-    hsl(209deg 26% 19%) 100%
-  );
-}
-
-.bg-green-x {
-  background-color: #04c976;
-}
-
-.gradient {
-  --color: yellow;
+.bg-gradient-color {
+  --color: tomato;
 
   background-image: linear-gradient(
     135deg,
-    var(--color) 0%,
-    /* hsl(156deg 71% 24%) 33%, */ hsl(218deg 35% 12% / 90%) 45%,
-    #23323e 50%,
-    hsl(218deg 35% 12% / 90%) 55%,
-    /* hsl(156deg 71% 24%) 67%, */ var(--color) 100%
+    var(--color) -4.06%,
+    #292f3c 41.59%,
+    #292f3c 59.09%,
+    var(--color) 104.45%
   );
 }
