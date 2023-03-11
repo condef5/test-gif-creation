@@ -81,7 +81,7 @@ function App() {
   return (
     <div className="bg-brand-dark">
       <div
-        className="w-[460px] h-[460px] m-auto relative"
+        className="w-[450px] h-[450px] m-auto relative flex flex-col"
         style={{
           backgroundImage: `linear-gradient(180deg, #53C27A -30.6%, rgba(83, 194, 122, 0) 74.46%)`,
         }}
@@ -95,19 +95,19 @@ function App() {
 
         {false && <RhombusList />}
 
-        <div>
-          <img
-            src={gif}
-            alt="rhyshock"
-            className="m-auto w-[52%] -mb-5"
-            style={
-              {
-                filter: 'drop-shadow(4px 4px 6px var(--beast-color))',
-                '--beast-color': '#06c976',
-              } as React.CSSProperties
-            }
-          />
+        <img
+          src={gif}
+          alt="rhyshock"
+          className="m-auto w-[52%]"
+          style={
+            {
+              filter: 'drop-shadow(4px 4px 6px var(--beast-color))',
+              '--beast-color': '#06c976',
+            } as React.CSSProperties
+          }
+        />
 
+        <div className="align-baseline py-4">
           <h1 className="text-white uppercase font-semibold text-lg tracking-wider">
             Rhyshock
           </h1>
