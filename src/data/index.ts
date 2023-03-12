@@ -38,6 +38,10 @@ export class SpecieStage {
       this.variation ? '-' + this.variation.slice(0, 1).toUpperCase() : ''
     }`
   }
+
+  get formatId() {
+    return `00${this.id}`.slice(-3)
+  }
 }
 
 type Rarity = 'starter' | 'core' | 'rare' | 'epic'
