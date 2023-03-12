@@ -1,5 +1,5 @@
 import cx from 'clsx'
-import { HTMLProps } from 'react'
+import { HTMLProps, useState } from 'react'
 import gif from './rhyshock.gif'
 import {
   ELEMENT_ICONS_WHITE,
@@ -12,7 +12,9 @@ import {
   mDefenseIcon,
   attackIcon,
 } from './assets/stats'
-import { bgPattern } from './assets'
+import { gifSpriteMap, bgPattern } from './assets'
+import BeastSelect, { options } from './Combobox'
+import { SpecieStage } from './data'
 
 const geneticValueIcons = {
   def: defenseIcon,
@@ -78,70 +80,85 @@ function RhombusList({ level = 2 }: { level?: number }) {
 }
 
 function App() {
+  const [selected, setSelected] = useState<SpecieStage>(options[0].value)
+  console.log(selected)
   return (
-    <div className="bg-brand-dark">
-      <div
-        className="w-[450px] h-[450px] m-auto relative flex flex-col"
-        style={{
-          backgroundImage: `linear-gradient(180deg, #53C27A -30.6%, rgba(83, 194, 122, 0) 74.46%)`,
-        }}
-      >
+    <div className="h-screen flex flex-col items-center justify-center">
+      <div className="controls my-4 w-1/4">
+        <BeastSelect
+          onChange={({ value }) => setSelected(value)}
+          value={selected}
+        />
+      </div>
+      <div className="bg-brand-dark">
         <div
-          className="absolute top-0 left-0 w-full h-full bg-no-repeat pointer-events-none"
+          className="w-[450px] h-[450px] m-auto relative flex flex-col"
           style={{
-            backgroundImage: `url(${bgPattern})`,
+            backgroundImage: `linear-gradient(180deg, #53C27A -30.6%, rgba(83, 194, 122, 0) 74.46%)`,
           }}
-        />
+        >
+          <div
+            className="absolute top-0 left-0 w-full h-full bg-no-repeat pointer-events-none"
+            style={{
+              backgroundImage: `url(${bgPattern})`,
+            }}
+          />
 
-        {false && <RhombusList />}
+          {false && <RhombusList />}
 
-        <img
-          src={gif}
-          alt="rhyshock"
-          className="mx-auto w-[60%]"
-          style={
-            {
-              filter: 'drop-shadow(4px 4px 6px var(--beast-color))',
-              '--beast-color': '#06c976',
-            } as React.CSSProperties
-          }
-        />
+          <img
+            src={gifSpriteMap[selected?.formatId]}
+            alt="rhyshock"
+            className="mx-auto w-[60%]"
+            style={
+              {
+                filter: 'drop-shadow(4px 4px 6px var(--beast-color))',
+                '--beast-color': '#06c976',
+              } as React.CSSProperties
+            }
+          />
 
-        <div className="self-end justify-self-end py-4">
-          <h1 className="text-white font-priory-san uppercase font-semibold text-white-shadow text-[28px]">
-            Rhyshock
-          </h1>
-          <div className="px-8 flex gap-4 items-start -mt-4">
-            <Rhombus
-              color={ELEMENT_ICONS_COLORS.fire}
-              className="h-16 w-16 rounded-xl"
-            >
-              <img src={ELEMENT_ICONS_WHITE.fire} className="w-9" />
-            </Rhombus>
+          <div className="self-end justify-self-end py-4">
+            <h1 className="text-center text-white font-priory-san uppercase font-semibold text-white-shadow text-[28px]">
+              {selected?.name}
+            </h1>
+            <div className="px-8 flex gap-4 items-start -mt-4">
+              <Rhombus
+                color={ELEMENT_ICONS_COLORS.fire}
+                className="h-16 w-16 rounded-xl"
+              >
+                <img src={ELEMENT_ICONS_WHITE.fire} className="w-9" />
+              </Rhombus>
 
-            <div className="flex gap-3 mt-7">
-              {Object.entries(geneticValueIcons).map(([key, value], index) => (
-                <div key={key} className={index % 2 === 0 ? 'mt-0' : 'mt-5'}>
-                  <Rhombus
-                    className="w-9 h-9 rounded-lg"
-                    gradient="gradient-brand-green"
-                  >
-                    <img src={value} className="w-8" />
-                  </Rhombus>
-                  <div className="text-white mt-1 font-priory-san text-white-shadow text-[22px]">
-                    {/* @ts-ignore */}
-                    {geneticValues[key]}
-                  </div>
-                </div>
-              ))}
+              <div className="flex gap-3 mt-7">
+                {Object.entries(geneticValueIcons).map(
+                  ([key, value], index) => (
+                    <div
+                      key={key}
+                      className={index % 2 === 0 ? 'mt-0' : 'mt-5'}
+                    >
+                      <Rhombus
+                        className="w-9 h-9 rounded-lg"
+                        gradient="gradient-brand-green"
+                      >
+                        <img src={value} className="w-8" />
+                      </Rhombus>
+                      <div className="text-center text-white mt-1 font-priory-san text-white-shadow text-[22px]">
+                        {/* @ts-ignore */}
+                        {geneticValues[key]}
+                      </div>
+                    </div>
+                  )
+                )}
+              </div>
+
+              <Rhombus
+                color={ELEMENT_ICONS_COLORS.earth}
+                className="h-16 w-16 rounded-xl"
+              >
+                <img src={ELEMENT_ICONS_WHITE.earth} className="w-9" />
+              </Rhombus>
             </div>
-
-            <Rhombus
-              color={ELEMENT_ICONS_COLORS.earth}
-              className="h-16 w-16 rounded-xl"
-            >
-              <img src={ELEMENT_ICONS_WHITE.earth} className="w-9" />
-            </Rhombus>
           </div>
         </div>
       </div>
