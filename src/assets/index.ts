@@ -1,6 +1,6 @@
 export { default as bgPattern } from './pattern.png'
 
-const BEASTS_SPRITESHEETS_FILES = import.meta.glob('./sprites/*.gif', {
+const BEASTS_SPRITESHEETS_FILES = import.meta.glob('./spritesheets/*.png', {
   eager: true,
   import: 'default',
 })
