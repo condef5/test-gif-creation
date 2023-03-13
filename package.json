@@ -9,12 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/dom-to-image": "^2.6.4",
     "clsx": "^1.2.1",
+    "dom-to-image": "^2.6.0",
+    "gif.js": "^0.2.0",
+    "html2canvas": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-select": "^5.7.0"
   },
   "devDependencies": {
+    "@types/gif.js": "^0.2.2",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",

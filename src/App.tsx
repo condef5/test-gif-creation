@@ -1,6 +1,5 @@
 import cx from 'clsx'
 import { HTMLProps, useState } from 'react'
-import gif from './rhyshock.gif'
 import {
   ELEMENT_ICONS_WHITE,
   ELEMENT_ICONS_COLORS,
@@ -15,6 +14,9 @@ import {
 import { gifSpriteMap, bgPattern } from './assets'
 import BeastSelect, { options } from './Combobox'
 import { SpecieStage } from './data'
+// import html2canvas from 'html2canvas'
+import domtoimage from 'dom-to-image'
+import GIF from 'gif.js'
 
 const geneticValueIcons = {
   def: defenseIcon,
@@ -79,18 +81,79 @@ function RhombusList({ level = 2 }: { level?: number }) {
   )
 }
 
+function CaptureButton() {
+  const [loading, setLoading] = useState(false)
+
+  async function download() {
+    const element: HTMLElement = document.querySelector('#card')!
+    const domList = document.querySelector('#dom-list')!
+
+    setLoading(true)
+
+    for (var i = 0; i < 4; i++) {
+      element.style.setProperty('--position-x', i * 100 + '%')
+      const dataUrl = await domtoimage.toSvg(element)
+      var img = new Image()
+      img.src = dataUrl
+      domList.appendChild(img)
+      console.log(123)
+    }
+
+    generateGif()
+  }
+
+  function generateGif() {
+    const domList = document.querySelector('#dom-list')!
+
+    const gif = new GIF({
+      workers: 2,
+      quality: 10,
+    })
+
+    domList.querySelectorAll('img').forEach((img) => {
+      gif.addFrame(img, { delay: 100 })
+    })
+
+    gif.on('finished', function (blob) {
+      setLoading(false)
+      window.open(URL.createObjectURL(blob))
+    })
+
+    gif.render()
+  }
+
+  return (
+    <div className="mt-2">
+      <button
+        disabled={loading}
+        onClick={download}
+        className="bg-brand-green text-white font-priory-san font-semibold text-[18px] py-2 px-4 rounded-full"
+      >
+        {loading ? '...' : 'Generate gif'}
+      </button>
+      {/* <button
+        disabled={loading}
+        onClick={generateGif}
+        className="bg-brand-green text-white font-priory-san font-semibold text-[18px] py-2 px-4 rounded-full"
+      >
+        {loading ? '...' : 'Gif'}
+      </button> */}
+    </div>
+  )
+}
+
 function App() {
   const [selected, setSelected] = useState<SpecieStage>(options[0].value)
-  console.log(selected)
+
   return (
-    <div className="h-screen flex flex-col items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center justify-center">
       <div className="controls my-4 w-1/4">
         <BeastSelect
           onChange={({ value }) => setSelected(value)}
           value={selected}
         />
       </div>
-      <div className="bg-brand-dark">
+      <div className="bg-brand-dark image-rendering-pixelated" id="card">
         <div
           className="w-[450px] h-[450px] m-auto relative flex flex-col"
           style={{
@@ -106,16 +169,16 @@ function App() {
 
           {false && <RhombusList />}
 
-          <img
-            src={gifSpriteMap[selected?.formatId]}
-            alt="rhyshock"
-            className="mx-auto w-[60%]"
+          <div
             style={
               {
+                backgroundImage: `url(${gifSpriteMap[selected?.formatId]})`,
                 filter: 'drop-shadow(4px 4px 6px var(--beast-color))',
+                backgroundPositionX: 'var(--position-x, 0)',
                 '--beast-color': '#06c976',
               } as React.CSSProperties
             }
+            className="mx-auto w-[270px] h-[270px] bg-cover"
           />
 
           <div className="self-end justify-self-end py-4">
@@ -162,6 +225,14 @@ function App() {
           </div>
         </div>
       </div>
+
+      <CaptureButton />
+
+      <div className="list flex w-full gap-2 p-2 flex-wrap" id="dom-list"></div>
+      <div
+        className="list flex w-full gap-2 p-2 flex-wrap"
+        id="canva-list"
+      ></div>
     </div>
   )
 }
