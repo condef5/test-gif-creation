@@ -107,15 +107,20 @@ function CaptureButton() {
 
     const gif = new GIF({
       workers: 2,
-      quality: 10,
+      quality: 8
     })
 
     domList.querySelectorAll('img').forEach((img) => {
-      gif.addFrame(img, { delay: 100 })
+      gif.addFrame(img, { delay: 100, dispose: 1 })
     })
 
     gif.on('finished', function (blob) {
       setLoading(false)
+
+      while (domList.firstChild) {
+        domList.removeChild(domList.firstChild)
+      }
+
       window.open(URL.createObjectURL(blob))
     })
 
@@ -153,7 +158,7 @@ function App() {
           value={selected}
         />
       </div>
-      <div className="bg-brand-dark image-rendering-pixelated" id="card">
+      <div className="bg-brand-dark" id="card">
         <div
           className="w-[450px] h-[450px] m-auto relative flex flex-col"
           style={{
@@ -178,7 +183,7 @@ function App() {
                 '--beast-color': '#06c976',
               } as React.CSSProperties
             }
-            className="mx-auto w-[270px] h-[270px] bg-cover"
+            className="mx-auto w-[270px] h-[270px] bg-cover image-rendering-pixelated"
           />
 
           <div className="self-end justify-self-end py-4">
