@@ -92,6 +92,7 @@ function CaptureButton() {
 
     for (var i = 0; i < 4; i++) {
       element.style.setProperty('--position-x', i * 100 + '%')
+      element.style.setProperty('--blur-size', i + 4 + 'px')
       const dataUrl = await domtoimage.toSvg(element)
       var img = new Image()
       img.src = dataUrl
@@ -178,7 +179,7 @@ function App() {
             style={
               {
                 backgroundImage: `url(${gifSpriteMap[selected?.formatId]})`,
-                filter: 'drop-shadow(4px 4px 6px var(--beast-color))',
+                filter: 'drop-shadow(4px 4px var(--blur-size) var(--beast-color))',
                 backgroundPositionX: 'var(--position-x, 0)',
                 '--beast-color': '#06c976',
               } as React.CSSProperties
