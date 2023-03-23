@@ -1,28 +1,49 @@
-export { default as combatIcon } from "./combat.png";
-export { default as corrosionIcon } from "./corrosion.png";
-export { default as darkIcon } from "./dark.png";
-export { default as earthIcon } from "./earth.png";
-export { default as electricIcon } from "./electric.png";
-export { default as fireIcon } from "./fire.png";
-export { default as plantIcon } from "./plant.png";
-export { default as lightIcon } from "./light.png";
-export { default as metalIcon } from "./metal.png";
-export { default as spiritIcon } from "./spirit.png";
-export { default as waterIcon } from "./water.png";
-export { default as windIcon } from "./wind.png";
-export { default as supportIcon } from "./support.png";
+import combatIcon from './combat.svg';
+import corrosionIcon from './corrosion.svg';
+import darkIcon from './dark.svg';
+import earthIcon from './earth.svg';
+import electricIcon from './electric.svg';
+import fireIcon from './fire.svg';
+import lightIcon from './light.svg';
+import metalIcon from './metal.svg';
+import plantIcon from './plant.svg';
+import spiritIcon from './spirit.svg';
+import waterIcon from './water.svg';
+import windIcon from './wind.svg';
+import supportOldIcon from './support.png';
 
-// white version
-export { default as combatIconWhite } from "./white/combat-white.png";
-export { default as corrosionIconWhite } from "./white/corrosion-white.png";
-export { default as darkIconWhite } from "./white/dark-white.png";
-export { default as earthIconWhite } from "./white/earth-white.png";
-export { default as electricIconWhite } from "./white/electric-white.png";
-export { default as fireIconWhite } from "./white/fire-white.png";
-export { default as plantIconWhite } from "./white/plant-white.png";
-export { default as lightIconWhite } from "./white/light-white.png";
-export { default as metalIconWhite } from "./white/metal-white.png";
-export { default as spiritIconWhite } from "./white/spirit-white.png";
-export { default as waterIconWhite } from "./white/water-white.png";
-export { default as windIconWhite } from "./white/wind-white.png";
-export { default as supportIconWhite } from "./white/support-white.png";
+import {Element} from '../../data';
+
+export const ELEMENT_ICONS: Record<Element, string> = {
+  Combat: combatIcon,
+  Corrosion: corrosionIcon,
+  Dark: darkIcon,
+  Earth: earthIcon,
+  Electric: electricIcon,
+  Fire: fireIcon,
+  Light: lightIcon,
+  Metal: metalIcon,
+  Plant: plantIcon,
+  Spirit: spiritIcon,
+  Water: waterIcon,
+  Wind: windIcon,
+  // Ask to nik the icon for support
+  Support: supportOldIcon,
+};
+
+export const ELEMENT_COLORS: Record<Element, string> = {
+  Combat: '#C22A2E',
+  Corrosion: '#A721BB',
+  Dark: '#777571',
+  Earth: '#99724F',
+  Electric: '#D9A427',
+  Fire: '#F7682A',
+  Light: '#E7EAFF',
+  Metal: '#73B7E2',
+  Plant: '#4BCE59',
+  Spirit: '#DBC7B7',
+  Water: '#2CB6E1',
+  Wind: '#86FEE5',
+  // Ask to nik the color for support
+  Support: '#335257',
+};

@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-/*
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
-}
-
-body {
-  margin: 0;
-}
-
 .gradient-brand-green {
   background-image: linear-gradient(
     135deg,
@@ -43,13 +25,13 @@ body {
   );
 }
 
-@font-face {
-  font-family: 'PrioriSan';
-  src: url('/fonts/PrioriSansOT-Bold.otf') format('opentype'),
-    url('/fonts/PrioriSansOT-Bold.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
-}
+/* @font-face {
+	font-family: 'PrioriSan';
+	src: url('/fonts/PrioriSansOT-Bold.otf') format('opentype'),
+		url('/fonts/PrioriSansOT-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+} */
 
 .text-white-shadow {
   text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75);
@@ -59,11 +41,141 @@ body {
   image-rendering: pixelated;
 }
 
-.list img {
-  /* max-width: 300px; */
+.core-gradient {
+  background: linear-gradient(
+    180deg,
+    #d6d0d0 -20.89%,
+    rgba(214, 208, 208, 0) 60.27%
+  );
 }
 
-#card {
-  margin: 0;
-  padding: 0;
+.rare-gradient {
+  background: linear-gradient(
+    180deg,
+    #34daff -20.89%,
+    rgba(52, 218, 255, 0) 60.27%
+  );
+}
+
+.epic-gradient {
+  background: linear-gradient(
+    180deg,
+    #ad54fe -20.89%,
+    rgba(173, 84, 254, 0) 60.27%
+  );
+}
+
+.starter-gradient {
+  background: linear-gradient(
+    180deg,
+    #ef3730 -20.89%,
+    rgba(239, 55, 48, 0) 60.27%
+  );
+}
+
+.core-natural-gradient {
+  background: linear-gradient(
+    135deg,
+    #dadadb -3.02%,
+    #42424d 39.28%,
+    #292f3c 50.17%,
+    #42424d 61.71%,
+    #dadadb 102.08%
+  );
+}
+
+.rare-natural-gradient {
+  background: linear-gradient(
+    135deg,
+    #34daff -3.02%,
+    #23434b 39.28%,
+    #292f3c 50.17%,
+    #23434b 61.71%,
+    #34daff 102.08%
+  );
+}
+
+.epic-natural-gradient {
+  background: linear-gradient(
+    135deg,
+    #ad54fe -3.02%,
+    #442d59 39.28%,
+    #292f3c 50.17%,
+    #442d59 61.71%,
+    #ad54fe 102.08%
+  );
+}
+
+.starter-natural-gradient {
+  background: linear-gradient(
+    135deg,
+    #ef3730 -3.02%,
+    #66211f 39.28%,
+    #292f3c 50.17%,
+    #66211f 61.71%,
+    #ef3730 102.08%
+  );
+}
+/* empty gradients */
+
+.core-empty-gradient {
+  background: linear-gradient(
+    135deg,
+    #dadadb -4.06%,
+    #292f3c 41.59%,
+    #292f3c 59.09%,
+    #dadadb 104.45%
+  );
+}
+
+.rare-empty-gradient {
+  background: linear-gradient(
+    135deg,
+    #34daff -4.06%,
+    #292f3c 41.59%,
+    #292f3c 59.09%,
+    #34daff 104.45%
+  );
+}
+
+.epic-empty-gradient {
+  background: linear-gradient(
+    135deg,
+    #ad54fe -4.06%,
+    #292f3c 41.59%,
+    #292f3c 59.09%,
+    #ad54fe 104.45%
+  );
+}
+
+.starter-empty-gradient {
+  background: linear-gradient(
+    135deg,
+    #ef3730 -4.06%,
+    #292f3c 41.59%,
+    #292f3c 59.09%,
+    #ef3730 104.45%
+  );
+}
+
+/* element gradients */
+
+.element-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color) -4.06%,
+    #292f3c 41.59%,
+    #292f3c 59.09%,
+    var(--color) 104.45%
+  );
+}
+
+/* lie gradient */
+
+.line-gradient {
+  background: linear-gradient(
+    var(--transition, 90deg),
+    var(--color, #ad54fe) 33%,
+    transparent 96.4%
+  );
 }

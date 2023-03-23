@@ -1,244 +1,342 @@
-import cx from 'clsx'
-import { HTMLProps, useState } from 'react'
-import {
-  ELEMENT_ICONS_WHITE,
-  ELEMENT_ICONS_COLORS,
-} from './assets/elements/element-icons'
-import {
-  hpIcon,
-  defenseIcon,
-  mAttackIcon,
-  mDefenseIcon,
-  attackIcon,
-} from './assets/stats'
-import { gifSpriteMap, bgPattern } from './assets'
-import BeastSelect, { options } from './Combobox'
-import { SpecieStage } from './data'
-// import html2canvas from 'html2canvas'
-import domtoimage from 'dom-to-image'
-import GIF from 'gif.js'
+import { useState } from 'react'
+import { Card } from './Card'
 
-const geneticValueIcons = {
-  def: defenseIcon,
-  atk: attackIcon,
-  hp: hpIcon,
-  mAtk: mAttackIcon,
-  mDef: mDefenseIcon,
-}
-
-const geneticValues = {
-  def: 3,
-  atk: 5,
-  hp: 10,
-  mAtk: 9,
-  mDef: 7,
-}
-
-type RhombusProps = {
-  color?: string
-  className?: string
-  gradient?: boolean | string
-  children?: React.ReactNode
-} & HTMLProps<HTMLDivElement>
-
-function Rhombus({
-  color = '#1bc478',
-  className,
-  gradient = 'bg-gradient-color',
-  children,
-  ...props
-}: RhombusProps) {
-  const defaultClasses =
-    'border bg-brand-green bg-opacity-50 rotate-45 flex items-center justify-center'
-  const combinedClasses = cx(defaultClasses, className, gradient)
-  return (
-    <div
-      className={combinedClasses}
-      style={{ '--color': color, borderColor: color } as React.CSSProperties}
-      {...props}
-    >
-      <div className="-rotate-45">{children}</div>
-    </div>
-  )
-}
-
-function RhombusList({ level = 2 }: { level?: number }) {
-  return (
-    <div className="flex justify-center items-center w-full pt-4 gap-3">
-      <Rhombus className="w-4 h-4 rounded" gradient={false} />
-      <Rhombus className="w-4 h-4 rounded" gradient="gradient-brand-green" />
-
-      <div className="w-8 h-8 border-brand-green border gradient-brand-green  rotate-45 rounded flex items-center justify-center relative">
-        <div className="w-5 h-5 border-brand-green border rounded p-2"></div>
-        <div className="-rotate-45 absolute text-white font-semibold text-sm">
-          {level}
-        </div>
-      </div>
-
-      <Rhombus className="w-4 h-4 rounded" gradient="gradient-brand-green" />
-      <Rhombus className="w-4 h-4 rounded" gradient={false} />
-    </div>
-  )
-}
-
-function CaptureButton() {
-  const [loading, setLoading] = useState(false)
-
-  async function download() {
-    const element: HTMLElement = document.querySelector('#card')!
-    const domList = document.querySelector('#dom-list')!
-
-    setLoading(true)
-
-    for (var i = 0; i < 4; i++) {
-      element.style.setProperty('--position-x', i * 100 + '%')
-      element.style.setProperty('--blur-size', i + 4 + 'px')
-      const dataUrl = await domtoimage.toSvg(element)
-      var img = new Image()
-      img.src = dataUrl
-      domList.appendChild(img)
-      console.log(123)
-    }
-
-    generateGif()
-  }
-
-  function generateGif() {
-    const domList = document.querySelector('#dom-list')!
-
-    const gif = new GIF({
-      workers: 2,
-      quality: 8
-    })
-
-    domList.querySelectorAll('img').forEach((img) => {
-      gif.addFrame(img, { delay: 100, dispose: 1 })
-    })
-
-    gif.on('finished', function (blob) {
-      setLoading(false)
-
-      while (domList.firstChild) {
-        domList.removeChild(domList.firstChild)
-      }
-
-      window.open(URL.createObjectURL(blob))
-    })
-
-    gif.render()
-  }
-
-  return (
-    <div className="mt-2">
-      <button
-        disabled={loading}
-        onClick={download}
-        className="bg-brand-green text-white font-priory-san font-semibold text-[18px] py-2 px-4 rounded-full"
-      >
-        {loading ? '...' : 'Generate gif'}
-      </button>
-      {/* <button
-        disabled={loading}
-        onClick={generateGif}
-        className="bg-brand-green text-white font-priory-san font-semibold text-[18px] py-2 px-4 rounded-full"
-      >
-        {loading ? '...' : 'Gif'}
-      </button> */}
-    </div>
-  )
-}
+const availableStage = [
+  {
+    name: 'Argos',
+    id: 1,
+  },
+  {
+    name: 'Argos(3)-F',
+    id: 3,
+  },
+  {
+    name: 'Argos(3)-W',
+    id: 5,
+  },
+  {
+    name: 'Argos(3)-P',
+    id: 7,
+  },
+  {
+    name: 'Argos(3)-E',
+    id: 9,
+  },
+  {
+    name: 'Koji',
+    id: 10,
+  },
+  {
+    name: 'Koji(3)-F',
+    id: 12,
+  },
+  {
+    name: 'Koji(3)-W',
+    id: 14,
+  },
+  {
+    name: 'Koji(3)-P',
+    id: 16,
+  },
+  {
+    name: 'Koji(3)-E',
+    id: 18,
+  },
+  {
+    name: 'Torudo',
+    id: 19,
+  },
+  {
+    name: 'Torudo(3)-F',
+    id: 21,
+  },
+  {
+    name: 'Torudo(3)-W',
+    id: 23,
+  },
+  {
+    name: 'Torudo(3)-P',
+    id: 25,
+  },
+  {
+    name: 'Torudo(3)-E',
+    id: 27,
+  },
+  {
+    name: 'Hydrake',
+    id: 28,
+  },
+  {
+    name: 'Hydrake(3)',
+    id: 30,
+  },
+  {
+    name: 'Mandor',
+    id: 31,
+  },
+  {
+    name: 'Mandor(3)',
+    id: 33,
+  },
+  {
+    name: 'Crakos',
+    id: 34,
+  },
+  {
+    name: 'Crakos(3)',
+    id: 36,
+  },
+  {
+    name: 'Rhyshock',
+    id: 37,
+  },
+  {
+    name: 'Rhyshock(3)',
+    id: 39,
+  },
+  {
+    name: 'Doxus',
+    id: 40,
+  },
+  {
+    name: 'Doxus(3)',
+    id: 42,
+  },
+  {
+    name: 'Spindal',
+    id: 43,
+  },
+  {
+    name: 'Spindal(3)',
+    id: 45,
+  },
+  {
+    name: 'Corvax',
+    id: 46,
+  },
+  {
+    name: 'Corvax(3)',
+    id: 48,
+  },
+  {
+    name: 'Drazil',
+    id: 49,
+  },
+  {
+    name: 'Drazil(3)',
+    id: 51,
+  },
+  {
+    name: 'Pangora',
+    id: 52,
+  },
+  {
+    name: 'Pangora(3)',
+    id: 54,
+  },
+  {
+    name: 'Darquill',
+    id: 55,
+  },
+  {
+    name: 'Darquill(3)',
+    id: 57,
+  },
+  {
+    name: 'Graildon',
+    id: 58,
+  },
+  {
+    name: 'Graildon(3)',
+    id: 60,
+  },
+  {
+    name: 'Armanite',
+    id: 61,
+  },
+  {
+    name: 'Armanite(3)',
+    id: 63,
+  },
+  {
+    name: 'Entik',
+    id: 64,
+  },
+  {
+    name: 'Entik(3)',
+    id: 66,
+  },
+  {
+    name: 'Stormstinger',
+    id: 67,
+  },
+  {
+    name: 'Stormstinger(3)',
+    id: 69,
+  },
+  {
+    name: 'Tusking',
+    id: 70,
+  },
+  {
+    name: 'Tusking(3)',
+    id: 72,
+  },
+  {
+    name: 'Soultan',
+    id: 73,
+  },
+  {
+    name: 'Soultan(3)',
+    id: 75,
+  },
+  {
+    name: 'Dhrog',
+    id: 76,
+  },
+  {
+    name: 'Dhrog(3)',
+    id: 78,
+  },
+  {
+    name: 'Mantara',
+    id: 79,
+  },
+  {
+    name: 'Mantara(3)',
+    id: 81,
+  },
+  {
+    name: 'Inferus',
+    id: 82,
+  },
+  {
+    name: 'Inferus(3)',
+    id: 84,
+  },
+  {
+    name: 'Golsting',
+    id: 85,
+  },
+  {
+    name: 'Golsting(3)',
+    id: 87,
+  },
+  {
+    name: 'Metalodon',
+    id: 88,
+  },
+  {
+    name: 'Metalodon(3)',
+    id: 90,
+  },
+  {
+    name: 'Malweave(3)',
+    id: 93,
+  },
+  {
+    name: 'Zephyrus',
+    id: 94,
+  },
+  {
+    name: 'Zephyrus(3)',
+    id: 96,
+  },
+  {
+    name: 'Shadovine',
+    id: 97,
+  },
+  {
+    name: 'Shadovine(3)',
+    id: 99,
+  },
+  {
+    name: 'Shoku',
+    id: 100,
+  },
+  {
+    name: 'Shoku(3)',
+    id: 102,
+  },
+  {
+    name: 'Darktide',
+    id: 103,
+  },
+  {
+    name: 'Darktide(3)',
+    id: 105,
+  },
+  {
+    name: 'Raikuma',
+    id: 106,
+  },
+  {
+    name: 'Raikuma(2)',
+    id: 107,
+  },
+  {
+    name: 'Raikuma(3)',
+    id: 108,
+  },
+  {
+    name: 'Basskelon',
+    id: 109,
+  },
+  {
+    name: 'Basskelon(3)',
+    id: 111,
+  },
+  {
+    name: 'Chromantis',
+    id: 112,
+  },
+  {
+    name: 'Chromantis(3)',
+    id: 114,
+  },
+  {
+    name: 'Vitorian',
+    id: 115,
+  },
+  {
+    name: 'Vitorian(3)',
+    id: 117,
+  },
+].filter((a) => !a.name.includes('3'))
 
 function App() {
-  const [selected, setSelected] = useState<SpecieStage>(options[0].value)
+  const [showLucky, setShowLucky] = useState(false)
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <div className="controls my-4 w-1/4">
-        <BeastSelect
-          onChange={({ value }) => setSelected(value)}
-          value={selected}
-        />
-      </div>
-      <div className="bg-brand-dark" id="card">
-        <div
-          className="w-[450px] h-[450px] m-auto relative flex flex-col"
-          style={{
-            backgroundImage: `linear-gradient(180deg, #53C27A -30.6%, rgba(83, 194, 122, 0) 74.46%)`,
-          }}
-        >
+    <div>
+      <div className="flex items-center justify-center flex-wrap gap-2">
+        {availableStage.map((specie) => (
           <div
-            className="absolute top-0 left-0 w-full h-full bg-no-repeat pointer-events-none"
-            style={{
-              backgroundImage: `url(${bgPattern})`,
-            }}
-          />
-
-          {false && <RhombusList />}
-
-          <div
-            style={
-              {
-                backgroundImage: `url(${gifSpriteMap[selected?.formatId]})`,
-                filter: 'drop-shadow(4px 4px var(--blur-size) var(--beast-color))',
-                backgroundPositionX: 'var(--position-x, 0)',
-                '--beast-color': '#06c976',
-              } as React.CSSProperties
-            }
-            className="mx-auto w-[270px] h-[270px] bg-cover image-rendering-pixelated"
-          />
-
-          <div className="self-end justify-self-end py-4">
-            <h1 className="text-center text-white font-priory-san uppercase font-semibold text-white-shadow text-[28px]">
-              {selected?.name}
-            </h1>
-            <div className="px-8 flex gap-4 items-start -mt-4">
-              <Rhombus
-                color={ELEMENT_ICONS_COLORS.fire}
-                className="h-16 w-16 rounded-xl"
-              >
-                <img src={ELEMENT_ICONS_WHITE.fire} className="w-9" />
-              </Rhombus>
-
-              <div className="flex gap-3 mt-7">
-                {Object.entries(geneticValueIcons).map(
-                  ([key, value], index) => (
-                    <div
-                      key={key}
-                      className={index % 2 === 0 ? 'mt-0' : 'mt-5'}
-                    >
-                      <Rhombus
-                        className="w-9 h-9 rounded-lg"
-                        gradient="gradient-brand-green"
-                      >
-                        <img src={value} className="w-8" />
-                      </Rhombus>
-                      <div className="text-center text-white mt-1 font-priory-san text-white-shadow text-[22px]">
-                        {/* @ts-ignore */}
-                        {geneticValues[key]}
-                      </div>
-                    </div>
-                  )
-                )}
-              </div>
-
-              <Rhombus
-                color={ELEMENT_ICONS_COLORS.earth}
-                className="h-16 w-16 rounded-xl"
-              >
-                <img src={ELEMENT_ICONS_WHITE.earth} className="w-9" />
-              </Rhombus>
-            </div>
+            key={specie.id}
+            className=" relative min-w-[450px] min-h-[450px] flex-1"
+          >
+            <Card specieStageId={specie.id.toString()} lucky={true} />
           </div>
-        </div>
+        ))}
       </div>
 
-      <CaptureButton />
+      {showLucky && (
+        <div key='remos' className="absolute top-0 left-0 w-full min-h-screen flex items-center justify-center flex-wrap gap-2">
+          {availableStage.map((specie) => (
+            <div
+              key={specie.id}
+              className=" relative min-w-[450px] min-h-[450px] flex-1"
+              style={{}}
+            >
+              <Card specieStageId={specie.id.toString()} lucky={false} />
+            </div>
+          ))}
+        </div>
+      )}
 
-      <div className="list flex w-full gap-2 p-2 flex-wrap" id="dom-list"></div>
-      <div
-        className="list flex w-full gap-2 p-2 flex-wrap"
-        id="canva-list"
-      ></div>
+      <button className="z-30 fixed top-0 left-0 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setShowLucky(!showLucky)}>
+        Change
+      </button>
     </div>
   )
 }
