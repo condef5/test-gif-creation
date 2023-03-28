@@ -7,7 +7,7 @@ export function GridLines() {
   return (
     <>
       {/* start of grid */}
-      <div className="w-full h-[1px] absolute top-[260px] bg-cyan-300" />
+      <div className="w-full h-[1px] absolute top-[260px] bg-cyan-100" />
 
       {[...Array(32)].map((_, index) => (
         <div
@@ -22,7 +22,7 @@ export function GridLines() {
       {true &&
         [...Array(size)].map((_, index) => (
           <div
-            className="h-full w-[1px] absolute bg-cyan-300 pointer-events-none"
+            className="h-full w-[1px] absolute bg-cyan-100 pointer-events-none"
             style={{
               left: `${end - index * 10}px`,
             }}
@@ -30,7 +30,7 @@ export function GridLines() {
           />
         ))}
 
-      <div className="w-full h-[1px] absolute top-[292px] bg-cyan-300" />
+      <div className="w-full h-[1px] absolute top-[292px] bg-cyan-100" />
       {/* end of grid */}
     </>
   )
