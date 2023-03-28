@@ -14,7 +14,7 @@ function useInitConfig(): [Config, (config: Config) => void] {
     lucky: false,
     lines: false,
     shadow: false,
-    id: true,
+    id: false,
   })
 
   return [config, setConfig]
