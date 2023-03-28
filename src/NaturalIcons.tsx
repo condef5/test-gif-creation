@@ -119,7 +119,7 @@ export function MDef(props: SVGProps<SVGSVGElement>) {
       fill="none"
       color="white"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ marginTop: '-2px' }}
+      style={{ marginTop: '-1px' }}
       {...props}
     >
       <path
