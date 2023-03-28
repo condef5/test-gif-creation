@@ -204,9 +204,10 @@ export function Card({
               '--beast-color': rarityColors[rarity],
             } as React.CSSProperties
           }
-          className="mx-auto relative overflow-hidden w-[270px] h-[270px] bg-cover image-rendering-pixelated flex items-end justify-center"
+          className="furtive mx-auto relative overflow-hidden w-[270px] h-[270px] bg-cover image-rendering-pixelated flex items-end justify-center"
         >
           <DynamicImage specieStage={specieStage} lucky={lucky} />
+
           {config.shadow && (
             <DynamicImage specieStage={specieStage} lucky={!lucky} />
           )}
@@ -284,6 +285,12 @@ export function Card({
       <Line color={rarityColors[rarity]} />
       <HLine color={rarityColors[rarity]} />
       <HLine color={rarityColors[rarity]} position="top-0 right-0" />
+
+      {config.id && (
+        <span className="absolute bottom-[210px] right-0 text-white text-lg p-2">
+          {specieStage.formatId}
+        </span>
+      )}
 
       {config.lines && <GridLines />}
     </AbsoluteFill>

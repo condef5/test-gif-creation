@@ -6,6 +6,7 @@ type Config = {
   lucky: boolean
   lines: boolean
   shadow: boolean
+  id: boolean
 }
 
 function useInitConfig(): [Config, (config: Config) => void] {
@@ -13,6 +14,7 @@ function useInitConfig(): [Config, (config: Config) => void] {
     lucky: false,
     lines: false,
     shadow: false,
+    id: true,
   })
 
   return [config, setConfig]
@@ -71,6 +73,11 @@ export function Config() {
           label="Lines"
           enabled={config.lines}
           setEnabled={() => setConfig({ ...config, lines: !config.lines })}
+        />
+        <Checkbox
+          label="Id"
+          enabled={config.id}
+          setEnabled={() => setConfig({ ...config, id: !config.id })}
         />
       </div>
     </div>

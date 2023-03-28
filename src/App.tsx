@@ -1,3 +1,4 @@
+import './fonts.css'
 import { useState } from 'react'
 import { Card } from './Card'
 import { Config, useConfig } from './Config'

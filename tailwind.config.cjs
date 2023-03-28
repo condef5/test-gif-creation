@@ -11,7 +11,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        'priory-san': ['PrioriSan', 'system-ui', '-apple-system'],
+        'priory-san': ['PrioriSans', 'system-ui', '-apple-system'],
       },
     },
   },
