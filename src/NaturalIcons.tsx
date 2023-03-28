@@ -43,7 +43,7 @@ export function Def(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 25 27"
       fill="none"
       color="white"
-      style={{ marginTop: '2px' }}
+      style={{ marginTop: '-3px' }}
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
@@ -119,6 +119,7 @@ export function MDef(props: SVGProps<SVGSVGElement>) {
       fill="none"
       color="white"
       xmlns="http://www.w3.org/2000/svg"
+      style={{ marginTop: '-2px' }}
       {...props}
     >
       <path

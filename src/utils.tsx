@@ -9,11 +9,11 @@ export function GridLines() {
       {/* start of grid */}
       <div className="w-full h-[1px] absolute top-[260px] bg-cyan-100" />
 
-      {[...Array(32)].map((_, index) => (
+      {[...Array(12)].map((_, index) => (
         <div
-          className="w-full h-[1px] absolute bg-cyan-100 opacity-25 pointer-events-none"
+          className="w-full h-[1px] absolute bg-cyan-100 opacity-70  pointer-events-none"
           style={{
-            top: `${285 - index * 5}px`,
+            top: `${415 - index * 5}px`,
           }}
           key={index}
         />
