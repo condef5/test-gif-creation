@@ -43,7 +43,7 @@ export function Def(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 25 27"
       fill="none"
       color="white"
-      style={{ marginTop: '-3px' }}
+      style={{ marginTop: '1px' }}
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
