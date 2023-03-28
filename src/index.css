@@ -180,6 +180,6 @@
   );
 }
 
-.furtive img:first-child {
+.furtive img:last-child {
   z-index: 10;
 }

@@ -154,6 +154,10 @@ export const luckiesStyles: Record<
     x: 0,
     y: -22,
   },
+  '082': {
+    x: 10,
+    y: 10,
+  },
   '084': {
     x: 0,
     y: -25,
@@ -161,6 +165,10 @@ export const luckiesStyles: Record<
   '087': {
     x: 0,
     y: -31,
+  },
+  '088': {
+    x: 10,
+    y: 10,
   },
   '090': {
     x: 0,
@@ -170,9 +178,18 @@ export const luckiesStyles: Record<
     x: 0,
     y: -37,
   },
+  '094': {
+    x: 12,
+    y: 10,
+    maxW: 90
+  },
   '096': {
     x: 0,
     y: -26,
+  },
+  '097': {
+    x: 13,
+    y: 10,
   },
   '099': {
     x: 0,
