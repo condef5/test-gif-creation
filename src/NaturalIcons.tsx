@@ -1,4 +1,4 @@
-import React, {SVGProps} from 'react';
+import React, { SVGProps } from 'react'
 
 export const geneticValueIcons = {
   def: <Def />,
@@ -6,7 +6,7 @@ export const geneticValueIcons = {
   hp: <Hp />,
   mAtk: <MAtk />,
   mDef: <MDef />,
-};
+}
 
 export function Atk(props: SVGProps<SVGSVGElement>) {
   return (
@@ -32,7 +32,7 @@ export function Atk(props: SVGProps<SVGSVGElement>) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
 
 export function Def(props: SVGProps<SVGSVGElement>) {
@@ -43,6 +43,7 @@ export function Def(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 25 27"
       fill="none"
       color="white"
+      style={{ marginTop: '2px' }}
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
@@ -55,7 +56,7 @@ export function Def(props: SVGProps<SVGSVGElement>) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
 
 export function Hp(props: SVGProps<SVGSVGElement>) {
@@ -67,6 +68,7 @@ export function Hp(props: SVGProps<SVGSVGElement>) {
       fill="none"
       color="white"
       xmlns="http://www.w3.org/2000/svg"
+      style={{ marginTop: '6px' }}
       {...props}
     >
       <path
@@ -74,7 +76,7 @@ export function Hp(props: SVGProps<SVGSVGElement>) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
 
 export function MAtk(props: SVGProps<SVGSVGElement>) {
@@ -105,7 +107,7 @@ export function MAtk(props: SVGProps<SVGSVGElement>) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
 
 export function MDef(props: SVGProps<SVGSVGElement>) {
@@ -128,5 +130,5 @@ export function MDef(props: SVGProps<SVGSVGElement>) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
