@@ -1,6 +1,6 @@
 import { useState } from 'react'
-// import { Card } from './SCard'
 import { Card } from './Card'
+import { Config, useConfig } from './Config'
 
 const availableStage = [
   {
@@ -306,8 +306,7 @@ const availableStage = [
 ].filter((a) => !a.name.includes('3'))
 
 function App() {
-  const [showLucky, setShowLucky] = useState(false)
-  const [shadow, setShadow] = useState(true)
+  const [config, setConfig] = useConfig()
 
   return (
     <div>
@@ -317,11 +316,7 @@ function App() {
             key={specie.id}
             className=" relative min-w-[450px] min-h-[450px] flex-1"
           >
-            <Card
-              specieStageId={specie.id.toString()}
-              lucky={true}
-              shadow={shadow}
-            />
+            <Card specieStageId={specie.id.toString()} lucky={true} />
           </div>
         ))}
       </div>
@@ -329,8 +324,8 @@ function App() {
       <div
         className="absolute top-0 left-0 w-full min-h-screen flex items-center justify-center flex-wrap gap-2"
         style={{
-          opacity: showLucky ? 1 : 0.5,
-          zIndex: showLucky ? 12 : -1,
+          opacity: config.lucky ? 0.5 : 1,
+          zIndex: config.lucky ? -1 : 10,
         }}
       >
         {availableStage.map((specie) => (
@@ -343,25 +338,7 @@ function App() {
         ))}
       </div>
 
-      <div className="z-30 fixed top-0 left-0 flex gap-3">
-        <button
-          className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-          onClick={() => setShowLucky(!showLucky)}
-        >
-          Change
-        </button>
-
-        <button
-          className="bg-cyan-500 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-full"
-          onClick={() => {
-            console.log(shadow)
-            setShadow(!shadow)
-          }}
-          disabled={showLucky}
-        >
-          Shadow
-        </button>
-      </div>
+      <Config />
     </div>
   )
 }

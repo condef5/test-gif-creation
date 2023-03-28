@@ -1,11 +1,11 @@
 import cx from 'clsx'
 import { useEffect, useState, HTMLProps } from 'react'
-import { Img, AbsoluteFill } from './Remotion'
 import { patterns, luckyPatterns } from './assets'
-import { ELEMENT_ICONS, ELEMENT_COLORS, STYLE_ICONS } from './assets/elements'
+import { ELEMENT_ICONS, ELEMENT_COLORS } from './assets/elements'
 import { Element, GeneticValues, SpecieStage, specieStages } from './data'
 import { geneticValueIcons } from './NaturalIcons'
 import { styles, specialOnes, notFitLuckies } from './styles'
+import { AbsoluteFill, Img } from './Remotion'
 import { GridLines } from './utils'
 import { useConfig } from './Config'
 
@@ -22,7 +22,7 @@ const defaultGeneticValues: GeneticValues = {
 }
 const rarityColors = {
   starter: '#EF3730',
-  core: '#00FF91',
+  core: '#DADADB',
   rare: '#34DAFF',
   epic: '#AD54FE',
 }
@@ -116,12 +116,15 @@ function getUrlImage({
 function DynamicImage({
   specieStage,
   lucky,
+  ...rest
 }: {
   specieStage: SpecieStage
   lucky: boolean
+  rest?: HTMLProps<HTMLDivElement>
 }) {
   const { formatId: id, stage } = specieStage
   const [imageSrc, setImageSrc] = useState('')
+  const left = 0
 
   useEffect(() => {
     const imagePathUrl = getUrlImage({ id, stage, lucky })
@@ -137,6 +140,7 @@ function DynamicImage({
     const notFitStyles = notFitLuckies.includes(id)
       ? { maxHeight: '250px', maxWidth: '250px', flex: '1' }
       : {}
+
     return (
       <Img
         src={imageSrc}
@@ -144,7 +148,9 @@ function DynamicImage({
         style={{
           ...styles({ id, stage, lucky }),
           ...notFitStyles,
+          pointerEvents: lucky ? 'auto' : 'none',
         }}
+        {...rest}
       />
     )
   }
@@ -156,7 +162,9 @@ function DynamicImage({
       src={imageSrc}
       className={`${widthClass} absolute left-0`}
       style={{
+        left: Math.floor(-left) * 270,
         ...styles({ id, stage, lucky }),
+        pointerEvents: lucky ? 'auto' : 'none',
       }}
     />
   )
@@ -166,21 +174,22 @@ export function Card({
   specieStageId,
   geneticValues = defaultGeneticValues,
   lucky = false,
+  shadow = true,
 }: {
   specieStageId: string
   geneticValues?: GeneticValues
   lucky?: boolean
+  shadow?: boolean
 }) {
   const specieStage = findSpecieStage(Number(specieStageId))!
   const { rarity } = specieStage.specie
   const gradient = lucky ? '' : `${rarity}-gradient`
   const naturalGradient = `${rarity}-natural-gradient`
   const [firstElement, secondElement]: Element[] = specieStage.elements
-
-  const [config] = useConfig()
+  const [config, setConfig] = useConfig()
 
   return (
-    <AbsoluteFill className="bg-brand-dark">
+    <AbsoluteFill className="bg-brand-dark absolute top-0 left-0 w-full h-full">
       <AbsoluteFill className="m-auto relative flex flex-col">
         <div
           className={
@@ -201,7 +210,7 @@ export function Card({
           style={
             {
               filter: lucky
-                ? 'drop-shadow(0px 0px var(--blur-size, 6px) var(--beast-color, #06c976))'
+                ? 'drop-shadow(0 0 var(--blur-size, 4px) var(--beast-color, #06c976))'
                 : 'none',
               '--beast-color': rarityColors[rarity],
             } as React.CSSProperties
@@ -209,9 +218,7 @@ export function Card({
           className="mx-auto relative overflow-hidden w-[270px] h-[270px] bg-cover image-rendering-pixelated flex items-end justify-center"
         >
           <DynamicImage specieStage={specieStage} lucky={lucky} />
-          {config.shadow && (
-            <DynamicImage specieStage={specieStage} lucky={!lucky} />
-          )}
+          {shadow && <DynamicImage specieStage={specieStage} lucky={false} />}
         </div>
 
         <div className="absolute bottom-0 py-4 w-full">
@@ -230,7 +237,6 @@ export function Card({
                 // ClassName="w-10"
                 style={{
                   filter: `drop-shadow(0px 0px 2px ${ELEMENT_COLORS[firstElement]})`,
-                  ...(STYLE_ICONS[firstElement] || {}),
                 }}
               />
             </Rhombus>
@@ -268,7 +274,6 @@ export function Card({
                   // ClassName="w-10"
                   style={{
                     filter: `drop-shadow(0px 0px 2px ${ELEMENT_COLORS[secondElement]})`,
-                    ...(STYLE_ICONS[secondElement] || {}),
                   }}
                 />
               </Rhombus>
@@ -286,6 +291,10 @@ export function Card({
       <Line color={rarityColors[rarity]} />
       <HLine color={rarityColors[rarity]} />
       <HLine color={rarityColors[rarity]} position="top-0 right-0" />
+
+      <span className="absolute bottom-[210px] right-0 text-white text-2xl p-2">
+        {specieStage.formatId}
+      </span>
 
       {config.lines && <GridLines />}
     </AbsoluteFill>
