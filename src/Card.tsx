@@ -106,11 +106,11 @@ function getUrlImage({
   id: string
   lucky: boolean
 }) {
-  if (!lucky) return `spritesheets/beast-${id}.png`
+  if (!lucky) return import(`./assets/spritesheets/beast-${id}.png`)
 
-  if (stage === 3) return `spritesheets/luckies/${id}.png`
+  if (stage === 3) return import(`./assets/spritesheets/luckies/${id}.png`)
 
-  return `luckies/${id}.png`
+  return import(`./assets/luckies/${id}.png`)
 }
 
 function DynamicImage({
@@ -124,9 +124,7 @@ function DynamicImage({
   const [imageSrc, setImageSrc] = useState('')
 
   useEffect(() => {
-    const imagePathUrl = getUrlImage({ id, stage, lucky })
-
-    import(`./assets/` + imagePathUrl).then((image) => {
+    getUrlImage({ id, stage, lucky }).then((image) => {
       setImageSrc(image.default)
     })
   }, [id])

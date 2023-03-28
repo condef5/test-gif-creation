@@ -495,10 +495,34 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@rollup/plugin-dynamic-import-vars@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-dynamic-import-vars/-/plugin-dynamic-import-vars-2.0.3.tgz#0f0c090d2569463b390603a2139ab4bbf2b4add6"
+  integrity sha512-0zQV0TDDewilU+7ZLmwc0u44SkeRxSxMdINBuX5isrQGJ6EdTjVL1TcnOZ9In99byaSGAQnHmSFw+6hm0E/jrw==
+  dependencies:
+    "@rollup/pluginutils" "^5.0.1"
+    estree-walker "^2.0.2"
+    fast-glob "^3.2.12"
+    magic-string "^0.27.0"
+
+"@rollup/pluginutils@^5.0.1":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-5.0.2.tgz#012b8f53c71e4f6f9cb317e311df1404f56e7a33"
+  integrity sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==
+  dependencies:
+    "@types/estree" "^1.0.0"
+    estree-walker "^2.0.2"
+    picomatch "^2.3.1"
+
 "@types/dom-to-image@^2.6.4":
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/@types/dom-to-image/-/dom-to-image-2.6.4.tgz#008411e23903cb0ee9e51a42ab8358c609541ee8"
   integrity sha512-UddUdGF1qulrSDulkz3K2Ypq527MR6ixlgAzqLbxSiQ0icx0XDlIV+h4+edmjq/1dqn0KgN0xGSe1kI9t+vGuw==
+
+"@types/estree@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.0.tgz#5fb2e536c1ae9bf35366eed879e827fa59ca41c2"
+  integrity sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==
 
 "@types/gif.js@^0.2.2":
   version "0.2.2"
@@ -843,6 +867,11 @@ escape-string-regexp@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
+
+estree-walker@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
+  integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
 
 fast-glob@^3.2.12:
   version "3.2.12"
