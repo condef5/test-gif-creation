@@ -47,3 +47,23 @@ export const ELEMENT_COLORS: Record<Element, string> = {
   // Ask to nik the color for support
   Support: '#335257',
 };
+
+export const STYLE_ICONS: Record<string, any> = {
+  Water: {
+    marginLeft: '-3px',
+  },
+  Fire: {
+    maxWidth: '45.44px',
+    marginTop: '-6px',
+  },
+  Spirit: {
+    marginTop: '-7px',
+  },
+  Wind: {
+    marginLeft: '1px',
+  },
+  Corrosion: {
+    marginLeft: '-1px',
+    marginTop: '-4px',
+  },
+};

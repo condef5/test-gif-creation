@@ -1,4 +1,5 @@
 import { useState } from 'react'
+// import { Card } from './SCard'
 import { Card } from './Card'
 
 const availableStage = [
@@ -306,6 +307,7 @@ const availableStage = [
 
 function App() {
   const [showLucky, setShowLucky] = useState(false)
+  const [shadow, setShadow] = useState(true)
 
   return (
     <div>
@@ -315,28 +317,51 @@ function App() {
             key={specie.id}
             className=" relative min-w-[450px] min-h-[450px] flex-1"
           >
-            <Card specieStageId={specie.id.toString()} lucky={true} />
+            <Card
+              specieStageId={specie.id.toString()}
+              lucky={true}
+              shadow={shadow}
+            />
           </div>
         ))}
       </div>
 
-      {showLucky && (
-        <div key='remos' className="absolute top-0 left-0 w-full min-h-screen flex items-center justify-center flex-wrap gap-2">
-          {availableStage.map((specie) => (
-            <div
-              key={specie.id}
-              className=" relative min-w-[450px] min-h-[450px] flex-1"
-              style={{}}
-            >
-              <Card specieStageId={specie.id.toString()} lucky={false} />
-            </div>
-          ))}
-        </div>
-      )}
+      <div
+        className="absolute top-0 left-0 w-full min-h-screen flex items-center justify-center flex-wrap gap-2"
+        style={{
+          opacity: showLucky ? 1 : 0.5,
+          zIndex: showLucky ? 12 : -1,
+        }}
+      >
+        {availableStage.map((specie) => (
+          <div
+            key={specie.id}
+            className=" relative min-w-[450px] min-h-[450px] flex-1"
+          >
+            <Card specieStageId={specie.id.toString()} lucky={false} />
+          </div>
+        ))}
+      </div>
 
-      <button className="z-30 fixed top-0 left-0 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setShowLucky(!showLucky)}>
-        Change
-      </button>
+      <div className="z-30 fixed top-0 left-0 flex gap-3">
+        <button
+          className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+          onClick={() => setShowLucky(!showLucky)}
+        >
+          Change
+        </button>
+
+        <button
+          className="bg-cyan-500 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-full"
+          onClick={() => {
+            console.log(shadow)
+            setShadow(!shadow)
+          }}
+          disabled={showLucky}
+        >
+          Shadow
+        </button>
+      </div>
     </div>
   )
 }

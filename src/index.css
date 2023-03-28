@@ -44,8 +44,8 @@
 .core-gradient {
   background: linear-gradient(
     180deg,
-    #d6d0d0 -20.89%,
-    rgba(214, 208, 208, 0) 60.27%
+    #8afdb2 -20.89%,
+    rgba(138, 253, 178, 0) 60.27%
   );
 }
 
@@ -76,11 +76,11 @@
 .core-natural-gradient {
   background: linear-gradient(
     135deg,
-    #dadadb -3.02%,
-    #42424d 39.28%,
+    #00fa8e -3.02%,
+    #244846 39.28%,
     #292f3c 50.17%,
-    #42424d 61.71%,
-    #dadadb 102.08%
+    #234946 61.71%,
+    #00d97f 102.08%
   );
 }
 
@@ -121,10 +121,10 @@
 .core-empty-gradient {
   background: linear-gradient(
     135deg,
-    #dadadb -4.06%,
+    #00ff91 -4.06%,
     #292f3c 41.59%,
     #292f3c 59.09%,
-    #dadadb 104.45%
+    #00ff91 104.45%
   );
 }
 
