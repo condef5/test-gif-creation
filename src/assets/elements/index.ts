@@ -63,7 +63,7 @@ export const STYLE_ICONS: Record<string, any> = {
     marginLeft: '1px',
   },
   Corrosion: {
-    marginLeft: '-1px',
+    marginLeft: '-3px',
     marginTop: '-4px',
   },
   Combat: {
