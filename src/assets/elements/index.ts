@@ -1,18 +1,18 @@
-import combatIcon from './combat.svg';
-import corrosionIcon from './corrosion.svg';
-import darkIcon from './dark.svg';
-import earthIcon from './earth.svg';
-import electricIcon from './electric.svg';
-import fireIcon from './fire.svg';
-import lightIcon from './light.svg';
-import metalIcon from './metal.svg';
-import plantIcon from './plant.svg';
-import spiritIcon from './spirit.svg';
-import waterIcon from './water.svg';
-import windIcon from './wind.svg';
-import supportOldIcon from './support.png';
+import combatIcon from './combat.svg'
+import corrosionIcon from './corrosion.svg'
+import darkIcon from './dark.svg'
+import earthIcon from './earth.svg'
+import electricIcon from './electric.svg'
+import fireIcon from './fire.svg'
+import lightIcon from './light.svg'
+import metalIcon from './metal.svg'
+import plantIcon from './plant.svg'
+import spiritIcon from './spirit.svg'
+import waterIcon from './water.svg'
+import windIcon from './wind.svg'
+import supportOldIcon from './support.png'
 
-import {Element} from '../../data';
+import { Element } from '../../data'
 
 export const ELEMENT_ICONS: Record<Element, string> = {
   Combat: combatIcon,
@@ -29,7 +29,7 @@ export const ELEMENT_ICONS: Record<Element, string> = {
   Wind: windIcon,
   // Ask to nik the icon for support
   Support: supportOldIcon,
-};
+}
 
 export const ELEMENT_COLORS: Record<Element, string> = {
   Combat: '#C22A2E',
@@ -46,7 +46,7 @@ export const ELEMENT_COLORS: Record<Element, string> = {
   Wind: '#86FEE5',
   // Ask to nik the color for support
   Support: '#335257',
-};
+}
 
 export const STYLE_ICONS: Record<string, any> = {
   Water: {
@@ -66,4 +66,8 @@ export const STYLE_ICONS: Record<string, any> = {
     marginLeft: '-1px',
     marginTop: '-4px',
   },
-};
+  Combat: {
+    marginLeft: '6.5px',
+    marginTop: '-4px',
+  },
+}
